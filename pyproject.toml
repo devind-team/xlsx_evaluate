@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "xlsx_calculate"
+version = "0.0.1"
+description = "Calculate XLSX formulas"
+authors = ["Victor <lyferov@yandex.ru>"]
+license = "MIT"
+readme = "readme.md"
+homepage = "https://github.com/devind-team/xlsx_evaluate"
+repository = "https://github.com/devind-team/xlsx_evaluate"
+keywords = ["openpyxlsx", "xlsx", "formulas", "evaluate"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+flake8-import-order = "^0.18.1"
+flake8-docstrings = "^1.6.0"
+flake8-builtins = "^1.5.3"
+flake8-quotes = "^3.3.1"
+flake8-comprehensions = "^3.9.0"
+flake8-eradicate = "^1.2.1"
+flake8-simplify = "^0.19.2"
+flake8-spellcheck = "^0.28.0"
+pep8-naming = "^0.12.1"
+flake8-use-fstring = "^1.3"
+flake8-annotations = "^2.9.0"
+coveralls = "^3.3.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = [
+    "xlsx_evaluate/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "main"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"

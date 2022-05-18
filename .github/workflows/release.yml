@@ -1,0 +1,84 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Install poetry
+        run: |
+          python -m pip install --upgrade pip
+          pip install poetry
+      - name: Install dependencies
+        run: |
+          poetry install
+      - name: Flake
+        run: |
+          poetry run flake8 xlsx_evaluate
+  test:
+    name: Test
+    needs: [ lint ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Install poetry
+        run: |
+          python -m pip install --upgrade pip
+          pip install poetry
+      - name: Install dependencies
+        run: |
+          poetry install
+      - name: Test with Python
+        run: |
+          poetry run python -m unittest
+  coverage:
+    name: Coverage
+    needs: [ tests ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Install poetry
+        run: |
+          python -m pip install --upgrade pip
+          pip install poetry
+      - name: Install dependencies
+        run: poetry install
+      - name: Coverage
+        run: poetry run coverage run -m unittest
+      - name: Coveralls
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+        run: poetry run coveralls
+  release:
+    name: Release
+    needs: [ tests ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Semantic Release
+        uses: relekang/python-semantic-release@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          repository_username: __token__
+          repository_password: ${{ secrets.PYPI_TOKEN }}
