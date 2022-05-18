@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "xlsx_evaluate"
-version = "0.0.0"
+version = "0.1.0"
 description = "Calculate XLSX formulas"
 authors = ["Victor <lyferov@yandex.ru>"]
 license = "MIT"
