@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.1 (2022-05-18)
+### Fix
+* Change python version ([`d598a0a`](https://github.com/devind-team/xlsx_evaluate/commit/d598a0ad77fd3f8c30668427af58dea47c3ed5a7))
+
 ## v0.1.0 (2022-05-18)
 ### Feature
 * Init project ([`8732901`](https://github.com/devind-team/xlsx_evaluate/commit/87329015a1788c79f98fcbc59b1a26a6a0c3ff9f))
