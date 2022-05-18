@@ -47,7 +47,7 @@ jobs:
           poetry run python -m unittest
   coverage:
     name: Coverage
-    needs: [ tests ]
+    needs: [ test ]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -70,7 +70,7 @@ jobs:
         run: poetry run coveralls
   release:
     name: Release
-    needs: [ tests ]
+    needs: [ test ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
