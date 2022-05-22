@@ -16,6 +16,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.9"
+openpyxl = "^3.0.10"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
