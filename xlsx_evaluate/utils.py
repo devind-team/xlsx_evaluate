@@ -1,7 +1,7 @@
 """Utils."""
 
 from typing import Optional
-import collections
+from collections import defaultdict
 import re
 from openpyxl.utils.cell import COORD_RE, SHEET_TITLE
 from openpyxl.utils.cell import range_boundaries, get_column_letter
@@ -29,8 +29,10 @@ def resolve_address(address: str) -> tuple[str, str, str]:
     column, row = coord_match[1:3]
     return sheet, column, row
 
-def resolve_ranges(ranges: str, default_sheet: str = 'Sheet1!') -> tuple[str, list[str]]:
+
+def resolve_ranges(ranges: str, default_sheet: str = 'Sheet1!') -> tuple[str, list[list[str]]]:
     sheet: Optional[str] = None
+    range_cells = defaultdict(set)
     for rng in ranges.split(','):
         # Handle sheets in range.
         if '!' in rng:
@@ -43,3 +45,19 @@ def resolve_ranges(ranges: str, default_sheet: str = 'Sheet1!') -> tuple[str, li
                 )
             sheet = rng_sheet
         min_col, min_row, max_col, max_row = range_boundaries(rng)
+
+        min_col = min_col or 1
+        min_row = min_row or 1
+        max_col = max_col or MAX_COL
+        max_row = max_row or MAX_ROW
+        for row_idx in range(min_row, max_row + 1):
+            for col_idx in range(min_col, max_col + 1):
+                range_cells[row_idx].add(col_idx)
+    sheet = default_sheet if sheet is None else sheet
+    sheet_str = f'{sheet}!' if sheet else ''
+    return sheet, [
+        [
+            f'{sheet_str}{get_column_letter(col_idx)}{row_idx}'
+            for col_idx in sorted(row_cells)
+        ] for row_idx, row_cells in sorted(range_cells.items())
+    ]

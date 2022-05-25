@@ -1,7 +1,6 @@
-"""Representation of a Microsoft Excel formula."""
+"""Representation of a Microsoft Excel formula and other types."""
 
 from dataclasses import dataclass, field
-from typing import List
 
 from openpyxl.utils.cell import column_index_from_string
 

@@ -15,8 +15,13 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<3.11"
 openpyxl = "^3.0.10"
+pandas = "^1.4.2"
+numpy = "^1.22.4"
+yearfrac = "^0.4.7"
+numpy-financial = "^1.0.0"
+scipy = "^1.8.1"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
