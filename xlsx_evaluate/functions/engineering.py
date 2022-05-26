@@ -2,7 +2,7 @@
 
 from typing import Literal, Optional, Union
 
-from . import xl, func_xltypes
+from . import func_xltypes, xl
 from .func_xltypes import UNUSED, Unused
 from .xlerrors import NumExcelError, ValueExcelError
 
@@ -11,7 +11,7 @@ Base = Literal[bin, dec, oct, hex]
 
 PERMITTED_DIGITS = {
     bin: set('01'),
-    oct: set("01234567"),
+    oct: set('01234567'),
     hex: set('0123456789ABCDEFabcdef'),
 }
 
@@ -48,12 +48,12 @@ def handle_places(
 def handle_number(number: func_xltypes.XlAnything, origin) -> Union[int, str]:
     if isinstance(number, func_xltypes.Boolean):
         raise ValueExcelError('The number cannot be a boolean.')
-
+    as_str: str = ''
     if origin == dec:
         return int(number)
 
     if isinstance(number, func_xltypes.Blank):
-        as_str = "0"
+        as_str = '0'
 
     elif isinstance(number, func_xltypes.Number):
         if number.is_decimal and not number.value.is_integer():
@@ -62,7 +62,7 @@ def handle_number(number: func_xltypes.XlAnything, origin) -> Union[int, str]:
         as_str = str(int(number))
 
     elif isinstance(number, func_xltypes.Text):
-        as_str = str(number) if number else "0"
+        as_str = str(number) if number else '0'
 
     if len(as_str) > 10:
         raise NumExcelError()

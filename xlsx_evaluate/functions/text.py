@@ -3,7 +3,7 @@
 
 from typing import Tuple
 
-from . import xl, xlerrors, func_xltypes
+from . import func_xltypes, xl, xlerrors
 
 
 @xl.register()
@@ -11,14 +11,14 @@ from . import xl, xlerrors, func_xltypes
 def CONCAT(
         *texts: Tuple[func_xltypes.XlText]
 ) -> func_xltypes.XlText:
-    """The CONCAT function combines the text from multiple ranges and/or
-    strings, but it doesn't provide delimiter or IgnoreEmpty arguments.
+    """The CONCAT function combines the text from multiple ranges and/or strings.
 
+    But it doesn't provide delimiter or IgnoreEmpty arguments.
     https://support.office.com/en-us/article/concat-function-9b1a9a3f-94ff-41af-9736-694cbd6b4ca2
     """
     if len(texts) > 254:
         raise xlerrors.ValueExcelError(
-            f"Can't concat more than 254 arguments. Provided: {len(texts)}")
+            f'Can`t concat more than 254 arguments. Provided: {len(texts)}')
 
     texts = xl.flatten(texts)
     return ''.join([
@@ -31,8 +31,7 @@ def CONCAT(
 def CONCATENATE(
         *parameters: Tuple[func_xltypes.XlAnything]
 ) -> func_xltypes.XlText:
-    """Use CONCATENATE, one of the text functions, to join two or more
-    text strings into one string.
+    """Use CONCATENATE, one of the text functions, to join two or more text strings into one string.
 
     https://support.microsoft.com/en-us/office/concatenate-function-8f8ae884-2ca8-4f7a-b093-75d702bea31d
 
@@ -42,7 +41,6 @@ def CONCATENATE(
     you should consider using CONCAT from now on. This is because CONCATENATE
     may not be available in future versions of Excel.
     """
-
     return CONCAT(
         [func_xltypes.Text.cast(parameter) for parameter in parameters]
     )
@@ -54,13 +52,11 @@ def EXACT(
         text1: func_xltypes.XlText,
         text2: func_xltypes.XlText
 ) -> func_xltypes.XlBoolean:
-    """Compares two text strings and returns TRUE if they are exactly the
-    same, FALSE otherwise. EXACT is case-sensitive but ignores formatting
-    differences.
+    """Compares two text strings and returns TRUE if they are exactly the same, FALSE otherwise.
 
+    EXACT is case-sensitive but ignores formatting differences.
     https://support.microsoft.com/en-us/office/exact-function-d3087698-fc15-4a15-9631-12575cf29926
     """
-
     return str(text1) == str(text2)
 
 
@@ -71,7 +67,9 @@ def FIND(
         within_text: func_xltypes.XlText,
         start_num: func_xltypes.Number = 0,
 ) -> func_xltypes.Number:
-    """FIND and FINDB locate one text string within a second text string,
+    """FIND function.
+
+    FIND and FINDB locate one text string within a second text string,
     and return the number of the starting position of the first text string
     from the first character of the second text string.
 
@@ -90,8 +88,8 @@ def FIND(
         index = within_text_str.index(find_text_str, start_num_int) + 1
     except ValueError:
         raise xlerrors.ValueExcelError(
-            f"Text {find_text} isn't found in"
-            f" {within_text_str[:start_num_int]}")
+            f'Text {find_text} isn`t found in'
+            f' {within_text_str[:start_num_int]}')
 
     return index
 
@@ -102,7 +100,9 @@ def LEFT(
         text: func_xltypes.XlText,
         num_chars: func_xltypes.XlNumber = 1
 ) -> func_xltypes.XlText:
-    """LEFT returns the first character or characters in a text string,
+    """LEFT functions.
+
+    LEFT returns the first character or characters in a text string,
     based on the number of characters you specify.
 
     https://support.office.com/en-us/article/left-leftb-functions-9203d2d2-7960-479b-84c6-1ea52b99640c
@@ -141,7 +141,9 @@ def MID(
         start_num: func_xltypes.Number,
         num_chars: func_xltypes.Number
 ) -> func_xltypes.XlText:
-    """Returns a specific number of characters from a text string, starting
+    """MID function.
+
+    Returns a specific number of characters from a text string, starting
     at the position you specify, based on the number of characters you specify.
 
     https://support.office.com/en-us/article/mid-midb-functions-d5f9e25c-d7d6-472e-b568-4ecb12433028
@@ -173,7 +175,9 @@ def REPLACE(
         num_chars: func_xltypes.XlNumber,
         new_text: func_xltypes.XlText
 ) -> func_xltypes.XlText:
-    """REPLACE replaces part of a text string, based on the number of
+    """Replace functions.
+
+    REPLACE replaces part of a text string, based on the number of
     characters you specify, with a different text string.
 
     https://support.office.com/en-us/article/replace-replaceb-functions-8d799074-2425-4a8a-84bc-82472868878a

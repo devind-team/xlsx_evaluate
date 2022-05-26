@@ -1,7 +1,7 @@
 """Monkey patch excel reader to add cvalue."""
 
-import contextlib
 import mock
+import contextlib
 import openpyxl
 
 
@@ -57,8 +57,6 @@ class WorksheetReader(openpyxl.worksheet._reader.WorksheetReader):
 @contextlib.contextmanager
 def openpyxl_WorksheetReader_patch():
     """Allow extraction of cached formula value."""
-    with mock.patch.object(
-            openpyxl.worksheet._reader, 'WorksheetReader', WorksheetReader):
-        with mock.patch.object(
-                openpyxl.reader.excel, 'WorksheetReader', WorksheetReader):
-            yield
+    with mock.patch.object(openpyxl.worksheet._reader, 'WorksheetReader', WorksheetReader), \
+            mock.patch.object(openpyxl.reader.excel, 'WorksheetReader', WorksheetReader):
+        yield

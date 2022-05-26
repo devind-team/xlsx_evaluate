@@ -2,16 +2,15 @@
 
 import inspect
 
+from . import utils
 from .functions import (
-    xl,
-    xlerrors,
+    func_xltypes,
     math,
     operator,
     text,
-    func_xltypes
+    xl,
+    xlerrors
 )
-
-from . import utils
 
 PREFIX_OP_TO_FUNC = {
     '-': operator.OP_NEG
@@ -56,13 +55,13 @@ class EvalContext:
         self.sheet = self.refsheet = ref.split('!')[0]
 
     def eval_cell(self, addr):
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def set_sheet(self, sheet=None):
         self.sheet = self.refsheet if sheet is None else sheet
 
 
-class ASTNode(object):
+class ASTNode:
     """A generic node in ast."""
 
     def __init__(self, token):
@@ -259,6 +258,5 @@ class FunctionNode(ASTNode):
 
     def __iter__(self):
         # Return node in resolution order
-        for arg in self.args:
-            yield arg
+        yield from self.args
         yield self

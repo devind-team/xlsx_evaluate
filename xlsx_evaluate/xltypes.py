@@ -41,6 +41,7 @@ class XLFormula(XLType):
                     term = f'{self.sheet_name}!{term}'
                 self.terms.appent(term)
 
+
 @dataclass
 class XLCell(XLType):
     """Representation an Excel Cell."""
@@ -58,7 +59,7 @@ class XLCell(XLType):
     defined_names: list = field(compare=False, default_factory=list, repr=True)
 
     def __post_init__(self):
-        # self.sheet, self.column, self.row = utils.resolve_address(self.address)
+        self.sheet, self.column, self.row = utils.resolve_address(self.address)
         self.column_index = column_index_from_string(self.column)
         self.row_index = int(self.row_index)
 

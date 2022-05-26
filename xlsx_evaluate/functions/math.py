@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 from scipy.special import factorial2
 
-from . import xl, xlerrors, xlcriteria, func_xltypes
+from . import func_xltypes, xl, xlcriteria, xlerrors
 
 # Testing Hook
 rand = np.random.rand
@@ -37,6 +37,7 @@ def ACOS(
     https://support.office.com/en-us/article/acos-function-cb73173f-d089-4582-afa1-76e5524b5d5b
     """
     return np.arccos(float(number))
+
 
 @xl.register()
 @xl.validate_args
@@ -114,7 +115,6 @@ def CEILING(
 
     https://support.office.com/en-us/article/ceiling-function-0a5cd7c8-0720-4f0a-bd2c-c943e510899f
     """
-
     if significance == 0:
         return 0
 
@@ -261,7 +261,6 @@ def FLOOR(
 
     https://support.office.com/en-us/article/FLOOR-function-14BB497C-24F2-4E04-B327-B0B4DE5A8886
     """
-
     if significance < 0 < number:
         raise xlerrors.NumExcelError('number and significance needto have the same sign')
     if number == 0:
@@ -364,8 +363,8 @@ def RANDBETWEEN(
 @xl.register()
 def PI() -> func_xltypes.XlNumber:
     """Returns the number 3.14159265358979, the mathematical constant pi.
-    Accurate to 15 digits.
 
+    Accurate to 15 digits.
     https://support.office.com/en-us/article/pi-function-264199d0-a3ba-46b8-975a-c4a04608989b
     """
     return math.pi
@@ -517,7 +516,7 @@ def SUM(
 @xl.register()
 @xl.validate_args
 def SUMIF(
-        range: func_xltypes.XlArray,
+        rng: func_xltypes.XlArray,
         criteria: func_xltypes.XlAnything,
         sum_range: func_xltypes.XlArray = None
 ) -> func_xltypes.XlNumber:
@@ -525,22 +524,21 @@ def SUMIF(
 
     https://support.office.com/en-us/article/sumif-function-169b8c99-c05c-4483-a712-1697a653039b
     """
-    # WARNING:
-    # - wildcards not supported
+    # WARNING: - wildcards not supported
 
     check = xlcriteria.parse_criteria(criteria)
 
     if sum_range is None:
-        sum_range = range
+        sum_range = rng
 
-    range = range.flat
+    rng = rng.flat
     sum_range = sum_range.cast_to_numbers().flat
 
     # zip() will automatically drop any range values that have indexes larger
     # than sum_range's length.
     return sum([
         sval
-        for cval, sval in zip(range, sum_range)
+        for cval, sval in zip(rng, sum_range)
         if check(cval)
     ])
 
@@ -554,6 +552,7 @@ def SUMIFS(
         *criteria_and_ranges: Tuple[Union[func_xltypes.XlAnything, func_xltypes.XlArray]]
 ) -> func_xltypes.XlNumber:
     """Adds the cells specified by given criteria in multiple arrays.
+
     Requires equal length arrays, since the arrays get decomposed.
 
     https://support.microsoft.com/en-us/office/sumifs-function-c9e748f5-7ea7-455d-9406-611cebce642b
@@ -604,11 +603,10 @@ def SUMPRODUCT(
         array_shape = array.shape
         if array1_shape != array_shape:
             raise xlerrors.ValueExcelError(
-                f"The shapes of the arrays do not match. Looking "
-                f"for {array1_shape} but given array has {array_shape}")
+                f'The shapes of the arrays do not match. Looking '
+                f'for {array1_shape} but given array has {array_shape}')
         if any(filter(xlerrors.ExcelError.is_error, xl.flatten(array))):
-            raise xlerrors.NaExcelError(
-                "Excel Errors are present in the sumproduct items.")
+            raise xlerrors.NaExcelError('Excel Errors are present in the sumproduct items.')
 
     sumproduct = pd.concat(arrays, axis=1)
     return sumproduct.prod(axis=1).sum()
@@ -633,6 +631,7 @@ def TRUNC(
         num_digits: func_xltypes.XlNumber = 0
 ) -> func_xltypes.XlNumber:
     """Truncate a number to the specified number of digits.
+
     https://support.office.com/en-us/article/trunc-function-8b86a64c-3127-43db-ba14-aa5ceb292721
     """
     # Simple case. We want to make sure to return an integer in this

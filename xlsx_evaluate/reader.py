@@ -5,7 +5,7 @@ import openpyxl
 from . import patch, xltypes
 
 
-class Reader():
+class Reader:
 
     def __init__(self, file_name):
         self.excel_file_name = file_name

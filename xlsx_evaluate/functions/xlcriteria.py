@@ -1,9 +1,9 @@
 """Define criteria operators in Excel."""
 
-from typing import Any, Union
 import re
+from typing import Union
 
-from . import operator, xlerrors, func_xltypes
+from . import func_xltypes, operator, xlerrors
 
 CRITERIA_REGEX = r'(\W*)(.*)'
 
@@ -28,20 +28,20 @@ def parse_criteria(criteria: Union[str, func_xltypes.Text, func_xltypes.Array]):
             str_operator = CRITERIA_OPERATORS['=']
             str_value = criteria
         value = str_value
-        for XlType in (
+        for xl_type in (
             func_xltypes.Number,
             func_xltypes.DateTime,
             func_xltypes.Boolean
         ):
             try:
-                value = XlType.cast(str_value)
+                value = xl_type.cast(str_value)
             except xlerrors.ValueExcelError:
                 pass
             else:
                 break
 
         def check(probe):
-            """Function for check criteria via operator."""
+            """Check a criteria via operator."""
             return operator(probe, value)
 
         return check
@@ -50,8 +50,8 @@ def parse_criteria(criteria: Union[str, func_xltypes.Text, func_xltypes.Array]):
     if isinstance(criteria, func_xltypes.Array):
         raise xlerrors.ValueExcelError('Array criteria not support.')
 
-    def check(probe: Any):
-        """Function for check native criteria."""
+    def check(probe):
+        """Check a native criteria."""
         return probe == criteria
 
     return check

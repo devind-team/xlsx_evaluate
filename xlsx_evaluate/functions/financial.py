@@ -6,7 +6,7 @@ import numpy_financial as npf
 import pandas as pd
 from scipy.optimize import newton
 
-from . import xl, xlerrors, func_xltypes
+from . import func_xltypes, xl, xlerrors
 
 
 @xl.register()
@@ -15,7 +15,7 @@ def IRR(
         values: func_xltypes.XlArray,
         guess: func_xltypes.XlNumber = None
 ) -> func_xltypes.XlNumber:
-    """Returns the internal rate of return for a series of cash flows
+    """Returns the internal rate of return for a series of cash flows.
 
     https://support.office.com/en-us/article/irr-function-64925eaa-9988-495b-b290-3ad0c163c1bc
     """
@@ -30,7 +30,9 @@ def NPV(
         rate: func_xltypes.XlNumber,
         *values: Tuple[func_xltypes.XlNumber],
 ) -> func_xltypes.XlNumber:
-    """Calculates the net present value of an investment by using a discount
+    """NPV function.
+
+    Calculates the net present value of an investment by using a discount
     rate and a series of future payments (negative values) and income
     (positive values).
 
@@ -57,25 +59,23 @@ def PMT(
         nper: func_xltypes.XlNumber,
         pv: func_xltypes.XlNumber,
         fv: func_xltypes.XlNumber = 0,
-        type: func_xltypes.XlNumber = 0
+        ttype: func_xltypes.XlNumber = 0
 ) -> func_xltypes.XlNumber:
-    """Calculates the payment for a loan based on constant payments and
-    a constant interest rate.
+    """Calculates the payment for a loan based on constant payments and a constant interest rate.
+
     https://support.office.com/en-us/article/pmt-function-0214da64-9a63-4996-bc20-214433fa6441
     """
-    # WARNING fv & type not used yet - both are assumed to be their
-    #         defaults (0)
-    # fv = args[3]
-    # type = args[4]
-
+    """WARNING fv & type not used yet - both are assumed to be their
+            defaults (0)
+    fv = args[3]
+    ttype = args[4]"""
     if xl.COMPATIBILITY == 'PYTHON':
         when = 'end'
-        if type != 0:
+        if ttype != 0:
             when = 'begin'
         return float(npf.pmt(
             float(rate), float(nper), float(pv), fv=float(fv), when=when))
-
-    # return -pv * rate / (1 - power(1 + rate, -nper))
+    # return -pv * rate / (1 - power(1 + rate, -nper)) # noqa
     return float(npf.pmt(float(rate), float(nper), float(pv), fv=float(fv), when='end'))
 
 
@@ -86,19 +86,18 @@ def PV(
         nper: func_xltypes.XlNumber,
         pmt: func_xltypes.XlNumber,
         fv: func_xltypes.XlNumber = 0,
-        type: func_xltypes.XlNumber = 0
+        ttype: func_xltypes.XlNumber = 0
 ) -> func_xltypes.XlNumber:
-    """PV, one of the financial functions, calculates the present value of a
-    loan or an investment, based on a constant interest rate.
+    """PV, one of the financial functions, calculates the present value of a loan or an investment.
 
+    Based on a constant interest rate.
     https://support.office.com/en-us/article/pv-function-23879d31-0e02-4321-be01-da16e8168cbd
     """
-
     return npf.pv(float(rate),
                   float(nper),
                   float(pmt),
                   fv=float(fv),
-                  when=int(type))
+                  when=int(ttype))
 
 
 @xl.register()
@@ -108,6 +107,7 @@ def SLN(
         life: func_xltypes.XlNumber
 ) -> func_xltypes.XlNumber:
     """Returns the straight-line depreciation of an asset for one period.
+
     https://support.office.com/en-us/article/sln-function-cdb666e5-c1c6-40a7-806a-e695edc2f1c8
     """
     return (cost - salvage) / life
@@ -125,10 +125,9 @@ def VDB(
         no_switch: func_xltypes.XlBoolean = False
 ) -> func_xltypes.XlNumber:
     """Returns the depreciation of an asset for any period you specify.
+
     https://support.office.com/en-us/article/vdb-function-dde4e207-f3fa-488d-91d2-66d55e861d73
     """
-    start_period = start_period
-    end_period = end_period
     depr_rate = factor / life
     acc_depr = 0
     depr = 0
@@ -233,15 +232,14 @@ def XIRR(
         dates: func_xltypes.XlArray,
         guess: func_xltypes.XlNumber = 0.1
 ) -> func_xltypes.XlNumber:
-    """Returns the internal rate of return for a schedule of cash flows that
-        is not necessarily periodic.
+    """Returns the internal rate of return for a schedule of cash flows that is not necessarily periodic.
+
     https://support.microsoft.com/en-us/office/xirr-function-de1242ec-6477-445b-b11b-a303ad9adc9d
     Algorithm found on stackoverflow:
     https://stackoverflow.com/questions/63797804/python-irr-function-giving-different-result-than-excel-xirr
     From MS, Newton's method is used to optimize:
     https://docs.microsoft.com/en-us/office/troubleshoot/excel/algorithm-of-xirr-funcation
     """
-
     values = values.flatten(func_xltypes.Number, None)
     dates = dates.flatten(func_xltypes.DateTime, None)
     # need to cast dates and guess to Python types else optimizer complains
@@ -254,7 +252,7 @@ def XIRR(
             f'`values` range must be the same length as `dates` range '
             f'in XIRR, {len(values)} != {len(dates)}')
 
-    series = pd.DataFrame({"dates": dates, "values": values})
+    series = pd.DataFrame({'dates': dates, 'values': values})
 
     # Filter all rows with 0 cashflows
     series = series[series['values'] != 0]
@@ -278,8 +276,8 @@ def XNPV(
         values: func_xltypes.XlArray,
         dates: func_xltypes.XlArray,
 ) -> func_xltypes.XlNumber:
-    """Returns the net present value for a schedule of cash flows that
-    is not necessarily periodic.
+    """Returns the net present value for a schedule of cash flows that is not necessarily periodic.
+
     https://support.microsoft.com/en-us/office/xnpv-function-1b42bbf6-370f-4532-a0eb-d67c16b664b7
     """
     values = values.flatten(func_xltypes.Number, None)

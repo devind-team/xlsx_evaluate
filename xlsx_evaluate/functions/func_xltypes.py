@@ -1,8 +1,7 @@
 """Define xlsx types."""
-
-
+import contextlib
 import datetime
-from typing import Optional, Union, NewType
+from typing import NewType, Optional, Union
 
 import dateutil
 import numpy
@@ -223,48 +222,34 @@ class Text(ExcelType):
     sort_precedence = 1
 
     def __number__(self):
-        try:
+        with contextlib.suppress(ValueError):
             return int(self.value)
-        except ValueError:
-            pass
-        try:
+        with contextlib.suppress(ValueError):
             return float(self.value)
-        except ValueError:
-            pass
         # For arithmetic, boolean text is actually interpreted.
-        try:
+        with contextlib.suppress(xlerrors.ValueExcelError):
             return int(self.__bool__(by_content_only=True))
-        except xlerrors.ValueExcelError:
-            pass
         # Try casting to datetime first, since the string might represent one
         # and that can be concerted.
-        try:
+        with contextlib.suppress(xlerrors.ValueExcelError):
             return utils.datetime_to_number(self.__datetime__())
-        except xlerrors.ValueExcelError:
-            pass
-        raise xlerrors.ValueExcelError(
-            f'Could not convert {repr(self.value)} to float.')
+        raise xlerrors.ValueExcelError(f'Could not convert {repr(self.value)} to float.')
 
     def __bool__(self, by_content_only=False):
         if self.value.lower() in self.boolean_texts:
-            return (self.value.lower() == 'true')
+            return self.value.lower() == 'true'
         if by_content_only:
-            raise xlerrors.ValueExcelError(
-                f'Could not convert {repr(self.value)} to bool.')
+            raise xlerrors.ValueExcelError(f'Could not convert {repr(self.value)} to bool.')
         return bool(self.value)
 
     def __Boolean__(self):
         return Boolean(self.__bool__(by_content_only=True))
 
     def __datetime__(self):
-        try:
+        with contextlib.suppress(ValueError, OverflowError):
             return utils.number_to_datetime(float(self.value))
-        except (ValueError, OverflowError):
-            pass
-        try:
+        with contextlib.suppress(ValueError, OverflowError):
             return dateutil.parser.parse(self.value)
-        except (ValueError, OverflowError):
-            pass
         raise xlerrors.ValueExcelError(
             f'Could not cast {repr(self.value)} (of type {type(self.value)} '
             f'to date/time.')
@@ -310,7 +295,7 @@ class Boolean(ExcelType):
     datetime_false = datetime.datetime(1999, 12, 30)
 
     def _sort_key(self, other):
-        return (self.sort_precedence, int(self.value))
+        return self.sort_precedence, int(self.value)
 
     def __number__(self):
         return int(self.value)
@@ -463,7 +448,7 @@ class Array(pandas.DataFrame):
 
 
 class Expr:
-    """Expression
+    """Expression.
 
     Represents an expression that has yet to be evaluated. This class is
     agnostic to the internals of the implementation details. In other words,
@@ -476,8 +461,8 @@ class Expr:
     required or will be considered by this library.)
     """
 
-    def __init__(self, callable, args=(), kwargs={}, **info):
-        self.callable = callable
+    def __init__(self, cll, args=(), kwargs={}, **info):
+        self.callable = cll
         self.args = args
         self.kwargs = kwargs.copy()
         for name, value in info.items():
@@ -522,7 +507,7 @@ XlAnything = Union[XlNumber, XlText, XlBoolean, XlDateTime, XlBlank, XlArray]
 
 
 class Unused:
-    """Unused Type
+    """Unused Type.
 
     Some Excel formulae behave differently if you use a blank cell for one
     parameter vs not using that parameter at all. For example:

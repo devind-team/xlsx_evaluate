@@ -1,6 +1,6 @@
 """Define Excel operators."""
 
-from . import xl, xlerrors, func_xltypes
+from . import func_xltypes, xl, xlerrors
 
 
 @xl.register()

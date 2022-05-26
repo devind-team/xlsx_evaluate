@@ -6,7 +6,7 @@ import yearfrac
 from dateutil import rrule
 from dateutil.relativedelta import relativedelta
 
-from . import utils, xl, xlerrors, func_xltypes
+from . import func_xltypes, utils, xl, xlerrors
 
 # Testing hook.
 now = datetime.datetime.now
@@ -35,7 +35,7 @@ def DATE(
 
     if result <= utils.EXCEL_EPOCH:
         raise xlerrors.NumExcelError(
-            f"Date result before {utils.EXCEL_EPOCH}")
+            f'Date result before {utils.EXCEL_EPOCH}')
 
     return result
 
@@ -51,7 +51,6 @@ def DATEDIF(
 
     https://support.office.com/en-us/article/datedif-function-25dba1a4-2812-480b-84dd-8b32a451b35c
     """
-
     if start_date > end_date:
         raise xlerrors.NumExcelError(
             f'Start date must be before the end date. Got Start: \
@@ -116,9 +115,8 @@ def DAY(
 
     https://support.microsoft.com/en-us/office/day-function-8a7d1cbb-6c7d-4ba1-8aea-25c134d03101
     """
-
     date = utils.number_to_datetime(int(serial_number))
-    return int(date.strftime("%d"))
+    return int(date.strftime('%d'))
 
 
 @xl.register()
@@ -131,7 +129,6 @@ def DAYS(
 
     https://support.microsoft.com/en-us/office/days-function-57740535-d549-4395-8728-0f07bff0b9df
     """
-
     days = end_date - start_date
     return days
 
@@ -142,7 +139,9 @@ def EDATE(
         start_date: func_xltypes.XlDateTime,
         months: func_xltypes.XlNumber
 ) -> func_xltypes.XlDateTime:
-    """Returns the serial number that represents the date that is the
+    """EDATE function.
+
+    Returns the serial number that represents the date that is the
     indicated number of months before or after a specified date
     (the start_date)
 
@@ -152,8 +151,7 @@ def EDATE(
     edate = utils.number_to_datetime(int(start_date)) + delta
 
     if edate <= utils.EXCEL_EPOCH:
-        raise xlerrors.NumExcelError(
-            f"Date result before {utils.EXCEL_EPOCH}")
+        raise xlerrors.NumExcelError(f'Date result before {utils.EXCEL_EPOCH}')
 
     return utils.datetime_to_number(edate)
 
@@ -164,7 +162,9 @@ def EOMONTH(
         start_date: func_xltypes.XlDateTime,
         months: func_xltypes.XlNumber
 ) -> func_xltypes.XlNumber:
-    """Returns the serial number for the last day of the month that is the
+    """EOMONTH function.
+
+    Returns the serial number for the last day of the month that is the
     indicated number of months before or after start_date.
 
     https://support.office.com/en-us/article/eomonth-function-7314ffa1-2bc9-4005-9d66-f49db127d628
@@ -173,8 +173,7 @@ def EOMONTH(
     edate = utils.number_to_datetime(int(start_date)) + delta
 
     if edate <= utils.EXCEL_EPOCH:
-        raise xlerrors.NumExcelError(
-            f"Date result before {utils.EXCEL_EPOCH}")
+        raise xlerrors.NumExcelError(f'Date result before {utils.EXCEL_EPOCH}')
 
     eomonth = edate + relativedelta(day=31)
 
@@ -190,7 +189,6 @@ def ISOWEEKNUM(
 
     https://support.microsoft.com/en-us/office/isoweeknum-function-1c2d0afe-d25b-4ab1-8894-8d0520e90e0e
     """
-
     datetime_date = utils.number_to_datetime(int(date))
     isoweeknum = datetime_date.isocalendar()[1]
     return isoweeknum
@@ -201,14 +199,13 @@ def ISOWEEKNUM(
 def MONTH(
         serial_number: func_xltypes.XlNumber
 ) -> func_xltypes.XlNumber:
-    """Returns the month of a date represented by a serial number. The month
-    is given as an integer, ranging from 1 (January) to 12 (December).
+    """Returns the month of a date represented by a serial number.
 
+    The month is given as an integer, ranging from 1 (January) to 12 (December).
     https://support.microsoft.com/en-us/office/month-function-579a2881-199b-48b2-ab90-ddba0eba86e8
     """
-
     date = utils.number_to_datetime(int(serial_number))
-    return int(date.strftime("%m"))
+    return int(date.strftime('%m'))
 
 
 @xl.register()
@@ -237,25 +234,17 @@ def WEEKDAY(
         serial_number: func_xltypes.XlNumber,
         return_type: func_xltypes.XlNumber = None
 ) -> func_xltypes.XlNumber:
-    """Returns the day of the week corresponding to a date. The day is given
-    as an integer, ranging from 1 (Sunday) to 7 (Saturday), by default.
+    """Returns the day of the week corresponding to a date.
 
+    The day is given as an integer, ranging from 1 (Sunday) to 7 (Saturday), by default.
     https://support.microsoft.com/en-us/office/weekday-function-60e44483-2ed1-439f-8bd0-e404c190949a
     """
-
     date = utils.number_to_datetime(int(serial_number))
 
-    if return_type is None:
+    if return_type is None or int(return_type) == 1:
         # Numbers 1 (Sunday) through 7 (Saturday)
         week_days = (2, 3, 4, 5, 6, 7, 1)
         return week_days[date.weekday()]
-
-    elif int(return_type) == 1:
-        # Numbers 1 (Sunday) through 7 (Saturday)
-        week_days = (2, 3, 4, 5, 6, 7, 1)
-        return week_days[date.weekday()]
-
-    # weekday() is 0 based, starting on a Monday
     elif int(return_type) == 2:
         # Numbers 1 (Monday) through 7 (Sunday)
         week_days = (1, 2, 3, 4, 5, 6, 7)
@@ -303,8 +292,8 @@ def WEEKDAY(
 
     else:
         raise xlerrors.NumExcelError(
-            f"return_type needs to be omitted or one of 1, 2, 3, 11, 12, 13,\
-            14, 15, 16 or 17. You supplied {return_type}")
+            f'return_type needs to be omitted or one of 1, 2, 3, 11, 12, 13,\
+            14, 15, 16 or 17. You supplied {return_type}')
 
 
 @xl.register()
@@ -316,16 +305,14 @@ def YEAR(
 
     https://support.microsoft.com/en-us/office/year-function-c64f017a-1354-490d-981f-578e8ec8d3b9
     """
-
     date = utils.number_to_datetime(int(serial_number))
 
-    if (int(date.strftime("%Y")) < int(utils.EXCEL_EPOCH.strftime("%Y"))) \
-            or (int(date.strftime("%Y")) > 9999):
+    if (int(date.strftime('%Y')) < int(utils.EXCEL_EPOCH.strftime('%Y'))) \
+            or (int(date.strftime('%Y')) > 9999):
         raise xlerrors.ValueExcelError(
             f'year {date.strftime("%Y")} must be after \
             {utils.EXCEL_EPOCH.strftime("%Y")} and before 9999')
-
-    return int(date.strftime("%Y"))
+    return int(date.strftime('%Y'))
 
 
 @xl.register()
@@ -335,8 +322,7 @@ def YEARFRAC(
         end_date: func_xltypes.XlDateTime,
         basis: func_xltypes.XlNumber = 0
 ) -> func_xltypes.XlNumber:
-    """Returns the fraction of the year represented by the number of whole
-    days between two dates.
+    """Returns the fraction of the year represented by the number of whole days between two dates.
 
     https://support.office.com/en-us/article/yearfrac-function-3844141e-c76d-4143-82b6-208454ddc6a8
     """

@@ -1,10 +1,10 @@
 """Utils."""
 
-from typing import Optional
-from collections import defaultdict
 import re
+from collections import defaultdict
+from typing import Optional
 from openpyxl.utils.cell import COORD_RE, SHEET_TITLE
-from openpyxl.utils.cell import range_boundaries, get_column_letter
+from openpyxl.utils.cell import get_column_letter, range_boundaries
 
 
 MAX_COL: int = 18278

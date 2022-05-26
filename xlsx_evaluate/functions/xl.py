@@ -1,5 +1,5 @@
 """Common functions."""
-
+import contextlib
 import functools
 import inspect
 import typing
@@ -67,10 +67,8 @@ def _validate(vtype, value, name):
     # Support unions
     if getattr(vtype, '__origin__', None) == typing.Union:
         for stype in vtype.__args__:
-            try:
+            with contextlib.suppress(xlerrors.ExcelError):
                 return _validate(stype, value, name)
-            except xlerrors.ExcelError:
-                pass
             raise xlerrors.ValueExcelError(value)
     return value
 

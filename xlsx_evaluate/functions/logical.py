@@ -1,6 +1,6 @@
 """Define logincal functions in Excel."""
 
-from . import xl, xlerrors, func_xltypes
+from . import func_xltypes, xl, xlerrors
 
 
 @xl.register()
@@ -46,6 +46,7 @@ def TRUE() -> func_xltypes.XlBoolean:
     """
     return True
 
+
 @xl.register()
 @xl.validate_args
 def OR(
@@ -58,7 +59,7 @@ def OR(
     if not logicals:
         raise xlerrors.NullExcelError('logical1 is required')
 
-    # Use delayed evaluation to minimize th amount of valaues to evaluate.
+    # Use delayed evaluation to minimize th amount of values to evaluate.
     for logical in logicals:
         val = logical()
         for item in xl.flatten([val]):

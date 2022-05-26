@@ -7,7 +7,8 @@ import logging
 import os
 from dataclasses import dataclass, field
 
-from . import xltypes, reader, parser, tokenizer
+from . import parser, reader, tokenizer, xltypes
+
 
 @dataclass
 class Model:

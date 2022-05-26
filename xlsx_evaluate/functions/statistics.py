@@ -3,7 +3,7 @@
 
 from typing import Tuple, Union
 
-from . import xl, xlerrors, func_xltypes, xlcriteria
+from . import func_xltypes, xl, xlcriteria, xlerrors
 
 
 @xl.register()
@@ -27,8 +27,7 @@ def AVERAGE(
 @xl.register()
 @xl.validate_args
 def COUNT(*values) -> func_xltypes.Number:
-    """Counts the number of cells that contain numbers, and counts numbers
-    within the list of arguments.
+    """Counts the number of cells that contain numbers, and counts numbers within the list of arguments.
 
     https://support.office.com/en-us/article/count-function-a59cd7fc-b623-4d93-87a4-d23bf411294c
     """
@@ -37,7 +36,7 @@ def COUNT(*values) -> func_xltypes.Number:
         raise xlerrors.ValueExcelError('value1 is required')
 
     if len(values) > 255:
-        raise xlerrors.ValueExcelError(f"Can only have up to 255 supplimentary arguments. Provided: {len(values)}")
+        raise xlerrors.ValueExcelError(f'Can only have up to 255 supplimentary arguments. Provided: {len(values)}')
 
     return len(list(filter(func_xltypes.Number.is_type, values)))
 
@@ -134,5 +133,4 @@ def MIN(*numbers: Tuple[func_xltypes.Number]):
     # If no non numeric cells, return zero (is what excel does)
     if len(numbers) < 1:
         return 0
-
     return min(filter(func_xltypes.Number.is_type, numbers))
