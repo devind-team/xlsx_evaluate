@@ -25,11 +25,11 @@ class XLFormula(XLType):
     tokens: list[tokenizer.f_token] = field(init=False, default_factory=list, repr=True)
     terms: list[str] = field(init=False, default_factory=list, repr=True)
     associated_cells: set = field(init=False, default_factory=set, repr=True)
-    ast: ast_nodes.ASTNone = field(init=False, default=None)
+    ast: ast_nodes.ASTNode = field(init=False, default=None)
 
     def __post_init__(self):
         """Supplementary initialisation."""
-        self.tokens = tokenizer.Excelarser().getTokens(self.formula).items
+        self.tokens = tokenizer.ExcelParser().getTokens(self.formula).items
         for token in self.tokens:
             if (
                 (token.ttype == ExcelParserTokens.TOK_TYPE_OPERAND)
@@ -39,7 +39,7 @@ class XLFormula(XLType):
                 term = token.tvalue
                 if '!' not in term:
                     term = f'{self.sheet_name}!{term}'
-                self.terms.appent(term)
+                self.terms.append(term)
 
 
 @dataclass

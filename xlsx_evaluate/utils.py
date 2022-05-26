@@ -1,11 +1,13 @@
 """Utils."""
 
 import re
+import uuid
 from collections import defaultdict
+from string import ascii_uppercase
 from typing import Optional
+
 from openpyxl.utils.cell import COORD_RE, SHEET_TITLE
 from openpyxl.utils.cell import get_column_letter, range_boundaries
-
 
 MAX_COL: int = 18278
 MAX_ROW: int = 1048576
@@ -61,3 +63,34 @@ def resolve_ranges(ranges: str, default_sheet: str = 'Sheet1!') -> tuple[str, li
             for col_idx in sorted(row_cells)
         ] for row_idx, row_cells in sorted(range_cells.items())
     ]
+
+
+def col2num(col: Optional[str]) -> int:
+    if not col:
+        raise Exception('Column may not be empty')
+
+    tot = 0
+    for i, c in enumerate([c for c in col[::-1] if c != '$']):
+        if c == '$':
+            continue
+        tot += (ord(c) - 64) * 26 ** i
+    return tot
+
+
+def num2col(num: int):
+    if num < 1:
+        raise Exception(f'Number must be larger than 0: {num}')
+    s = ''
+    q = num
+    while q > 0:
+        (q, r) = divmod(q, 26)
+        if r == 0:
+            q = q - 1
+            r = 26
+        s = ascii_uppercase[r - 1] + s
+    return s
+
+
+def init_uuid():
+    """Default factory to initialise Formula.ranges."""
+    return uuid.uuid4()

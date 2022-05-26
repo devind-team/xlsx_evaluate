@@ -39,7 +39,6 @@ class Reader:
                     formula = None
                     value = cell.value
 
-                cells[addr] = xltypes.XLCell(
-                    addr, value=value, formula=formula)
+                cells[addr] = xltypes.XLCell(addr, value=value, formula=formula)
 
         return [cells, formulae, ranges]

@@ -9,7 +9,7 @@ from . import func_xltypes, xlerrors
 COMPATIBILITY = 'EXCEL'
 CELL_CHARACTER_LIMIT = 32767
 
-TYPE_TO_CAST: dict[typing.NewType, typing.Callable[[typing.Any], ...]] = {
+TYPE_TO_CAST: dict[typing.NewType, typing.Callable] = {
     func_xltypes.XlNumber: func_xltypes.Number.cast,
     func_xltypes.XlText: func_xltypes.Text.cast,
     func_xltypes.XlBoolean: func_xltypes.Boolean.cast,
