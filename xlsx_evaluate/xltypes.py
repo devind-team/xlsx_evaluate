@@ -61,7 +61,7 @@ class XLCell(XLType):
     def __post_init__(self):
         self.sheet, self.column, self.row = utils.resolve_address(self.address)
         self.column_index = column_index_from_string(self.column)
-        self.row_index = int(self.row_index)
+        self.row_index = int(self.row)
 
     def __float__(self):
         """Convert to float."""

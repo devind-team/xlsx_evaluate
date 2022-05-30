@@ -32,7 +32,7 @@ class ExcelError(Exception):
     """Excel exception."""
 
     def __init__(self, value, info=None):
-        super.__init__(info)
+        super().__init__(info)
         self.value = value
         self.info = info
 
@@ -55,7 +55,7 @@ class SpecificExcelError(ExcelError):
     value = None
 
     def __init__(self, info=None):
-        super.__init__(self.value, info)
+        super().__init__(self.value, info)
 
 
 @register

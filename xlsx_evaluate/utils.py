@@ -32,7 +32,7 @@ def resolve_address(address: str) -> tuple[str, str, str]:
     return sheet, column, row
 
 
-def resolve_ranges(ranges: str, default_sheet: str = 'Sheet1!') -> tuple[str, list[list[str]]]:
+def resolve_ranges(ranges: str, default_sheet: str = 'Sheet1') -> tuple[str, list[list[str]]]:
     sheet: Optional[str] = None
     range_cells = defaultdict(set)
     for rng in ranges.split(','):

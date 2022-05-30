@@ -1,5 +1,3 @@
-"""Running model for Excel formulas."""
-
 import copy
 import gzip
 import jsonpickle
@@ -7,7 +5,7 @@ import logging
 import os
 from dataclasses import dataclass, field
 
-from . import parser, reader, tokenizer, xltypes
+from . import xltypes, reader, parser, tokenizer
 
 
 @dataclass
@@ -20,8 +18,9 @@ class Model:
 
     def set_cell_value(self, address, value):
         """Sets a new value for a specified cell."""
-        if address in self.defined_names and isinstance(self.defined_names[address], xltypes.XLCell):
-            address = self.defined_names[address].address
+        if address in self.defined_names:
+            if isinstance(self.defined_names[address], xltypes.XLCell):
+                address = self.defined_names[address].address
 
         if isinstance(address, str):
             if address in self.cells:
@@ -34,37 +33,40 @@ class Model:
                 self.cells[address.address].value = value
             else:
                 self.cells[address.address] = xltypes.XLCell
-
         else:
             raise TypeError(
-                f'Cannot set the cell value for an address of type '
-                f'{address}. XLCell or a string is needed.'
+                f"Cannot set the cell value for an address of type "
+                f"{address}. XLCell or a string is needed."
             )
 
     def get_cell_value(self, address):
-        """Get cell value."""
-        if address in self.defined_names and isinstance(self.defined_names[address], xltypes.XLCell):
-            address = self.defined_names[address].address
+        if address in self.defined_names:
+            if isinstance(self.defined_names[address], xltypes.XLCell):
+                address = self.defined_names[address].address
 
         if isinstance(address, str):
             if address in self.cells:
                 return self.cells[address].value
             else:
-                logging.debug(f'Trying to get value for cell {address} but that cell doesn`t exist.')
+                logging.debug(
+                    "Trying to get value for cell {address} but that cell "
+                    "doesn't exist.")
                 return 0
 
         elif isinstance(address, xltypes.XLCell):
             if address.address in self.cells:
                 return self.cells[address.address].value
             else:
-                logging.debug(f'Trying to get value for cell {address.address} but that cell doesn`t exist')
+                logging.debug(
+                    f"Trying to get value for cell {address.address} but that cell doesn't exist")
                 return 0
 
         else:
             raise TypeError(
-                f'Cannot set the cell value for an address of type {address}. XLCell or a string is needed.')
+                f'Cannot set the cell value for an address of type {address}. XLCell or a string is needed.'
+            )
 
-    def persist_to_json_file(self, fname: str):
+    def persist_to_json_file(self, fname):
         """Writes the state to disk.
 
         Doesn't write the graph directly, but persist all the things that
@@ -119,7 +121,8 @@ class Model:
                 self.cells[cell].formula.ast = parser.FormulaParser().parse(
                     self.cells[cell].formula.formula, defined_names)
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other):
+
         cells_comparison = []
         for self_cell in self.cells:
             cells_comparison.append(self.cells[self_cell] == other.cells[self_cell])
@@ -148,8 +151,7 @@ class ModelCompiler:
     def __init__(self):
         self.model = Model()
 
-    @staticmethod
-    def read_excel_file(file_name):
+    def read_excel_file(self, file_name):
         archive = reader.Reader(file_name)
         archive.read()
         return archive
@@ -157,8 +159,7 @@ class ModelCompiler:
     def parse_archive(self, archive, ignore_sheets=[], ignore_hidden=False):
         self.model.cells, self.model.formulae, self.model.ranges = \
             archive.read_cells(ignore_sheets, ignore_hidden)
-        self.defined_names = archive.read_defined_names(
-            ignore_sheets, ignore_hidden)
+        self.defined_names = archive.read_defined_names(ignore_sheets, ignore_hidden)
         self.build_defined_names()
         self.link_cells_to_defined_names()
         self.build_ranges()
@@ -205,11 +206,10 @@ class ModelCompiler:
             cell_address = self.defined_names[name]
             cell_address = cell_address.replace('$', '')
 
-            # a cell has an address like; Sheet1!A1 # noqa
+            # a cell has an address like; Sheet1!A1
             if ':' not in cell_address:
                 if cell_address not in self.model.cells:
-                    logging.warning(
-                        f'Defined name {name} refers to empty cell {cell_address}. Is not being loaded.')
+                    logging.warning(f'Defined name {name} refers to empty cell {cell_address}. Is not being loaded.')
                     continue
                 else:
                     if self.model.cells[cell_address] is not None:

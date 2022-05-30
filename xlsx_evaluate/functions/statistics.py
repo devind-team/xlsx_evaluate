@@ -43,7 +43,7 @@ def COUNT(*values) -> func_xltypes.Number:
 
 @xl.register()
 @xl.validate_args
-def COUNTA(*values: tuple[func_xltypes.XlAnything]):
+def COUNTA(*values):
     """Counts the number of cells that are not empty in a range.
 
     https://support.office.com/en-us/article/counta-function-7dc98875-d5c1-46f1-9a82-53f3219e2509

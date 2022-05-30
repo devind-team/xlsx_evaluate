@@ -16,7 +16,7 @@ TYPE_TO_CAST: dict[typing.NewType, typing.Callable] = {
     func_xltypes.XlDateTime: func_xltypes.DateTime.cast,
     func_xltypes.XlArray: func_xltypes.Array.cast,
     func_xltypes.XlExpr: func_xltypes.Expr.cast,
-    func_xltypes.XlAnything: func_xltypes.ExcelType.cast,
+    func_xltypes.XlAnything: func_xltypes.ExcelType.cast_from_native,
 }
 
 
@@ -57,7 +57,7 @@ def _validate(vtype, value, name):
     # Support lists with value types
     if getattr(vtype, '__origin__', None) in [list, tuple]:
         itype = vtype.__args__[0]
-        if itype != func_xltypes.Array:
+        if itype != func_xltypes.XlArray:
             value = flatten(value)
         return tuple(filter(
             lambda x: x is not None,
@@ -69,7 +69,7 @@ def _validate(vtype, value, name):
         for stype in vtype.__args__:
             with contextlib.suppress(xlerrors.ExcelError):
                 return _validate(stype, value, name)
-            raise xlerrors.ValueExcelError(value)
+        raise xlerrors.ValueExcelError(value)
     return value
 
 
@@ -83,18 +83,15 @@ def _safe_validate(vtype, value, name):
 def validate_args(func):
     """Validate fucntions arguments."""
     @functools.wraps(func)
-    def validate(*args, **kwargs):
+    def validate(*args, **kw):
         sig = inspect.signature(func)
-        bound = sig.bind(*args, **kwargs)
-
-        # 1. Convert all input parameters to Excel Types
-        for pname, value in bound.arguments.items():
+        bound = sig.bind(*args, **kw)
+        # 1. Convert all input parameters to Excel Types.
+        for pname, value in list(bound.arguments.items()):
             if isinstance(value, xlerrors.ExcelError):
                 return value
             try:
-                bound.arguments[pname] = _validate(
-                    sig.parameters[pname].annotation, value, pname
-                )
+                bound.arguments[pname] = _validate(sig.parameters[pname].annotation, value, pname)
             except xlerrors.ExcelError as err:
                 return err
 
@@ -102,6 +99,7 @@ def validate_args(func):
         try:
             res = func(*bound.args, **bound.kwargs)
         except xlerrors.ExcelError as err:
+            # Never crash on Excel errors as we want to store them as the cell value.
             return err
 
         # 3. Convert result to Excel type

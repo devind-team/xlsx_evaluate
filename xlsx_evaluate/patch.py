@@ -45,7 +45,7 @@ class WorksheetReader(openpyxl.worksheet._reader.WorksheetReader):
                     style_array=style)
                 c._value = cell['value']
                 c.data_type = cell['data_type']
-                # xlcalculator extension: Store the cached value as well.
+                # xlsx evaluate extension: Store the cached value as well.
                 if c.data_type == 'f':
                     c.cvalue = cell['cvalue']
                 self.ws._cells[(cell['row'], cell['column'])] = c

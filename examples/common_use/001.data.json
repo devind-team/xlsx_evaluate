@@ -1,7 +1,7 @@
 {
   "cells": {
     "First!A1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!A1",
       "value": "Header 1",
       "formula": null,
@@ -13,7 +13,7 @@
       "row_index": 1
     },
     "First!B1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!B1",
       "value": "Header 2",
       "formula": null,
@@ -25,7 +25,7 @@
       "row_index": 1
     },
     "First!C1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!C1",
       "value": "Header 3",
       "formula": null,
@@ -37,7 +37,7 @@
       "row_index": 1
     },
     "First!A2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!A2",
       "value": 0.1,
       "formula": null,
@@ -49,7 +49,7 @@
       "row_index": 2
     },
     "First!B2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!B2",
       "value": 0.2,
       "formula": null,
@@ -61,7 +61,7 @@
       "row_index": 2
     },
     "First!C2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!C2",
       "value": 0.1,
       "formula": null,
@@ -73,7 +73,7 @@
       "row_index": 2
     },
     "First!A3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!A3",
       "value": 0.2,
       "formula": null,
@@ -85,7 +85,7 @@
       "row_index": 3
     },
     "First!B3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!B3",
       "value": 0.4,
       "formula": null,
@@ -97,7 +97,7 @@
       "row_index": 3
     },
     "First!C3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!C3",
       "value": 0.3,
       "formula": null,
@@ -109,7 +109,7 @@
       "row_index": 3
     },
     "First!A4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!A4",
       "value": 0.3,
       "formula": null,
@@ -121,7 +121,7 @@
       "row_index": 4
     },
     "First!B4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!B4",
       "value": 0.6,
       "formula": null,
@@ -133,7 +133,7 @@
       "row_index": 4
     },
     "First!C4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!C4",
       "value": 0.5,
       "formula": null,
@@ -145,7 +145,7 @@
       "row_index": 4
     },
     "First!A5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!A5",
       "value": 0.4,
       "formula": null,
@@ -157,7 +157,7 @@
       "row_index": 5
     },
     "First!B5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!B5",
       "value": 0.8,
       "formula": null,
@@ -169,7 +169,7 @@
       "row_index": 5
     },
     "First!C5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!C5",
       "value": 0.7,
       "formula": null,
@@ -181,7 +181,7 @@
       "row_index": 5
     },
     "First!A6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!A6",
       "value": 0.5,
       "formula": null,
@@ -193,7 +193,7 @@
       "row_index": 6
     },
     "First!B6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!B6",
       "value": 1,
       "formula": null,
@@ -205,7 +205,7 @@
       "row_index": 6
     },
     "First!C6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!C6",
       "value": 0.9,
       "formula": null,
@@ -217,7 +217,7 @@
       "row_index": 6
     },
     "First!A7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!A7",
       "value": 0.6,
       "formula": null,
@@ -229,7 +229,7 @@
       "row_index": 7
     },
     "First!B7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!B7",
       "value": 1.2,
       "formula": null,
@@ -241,7 +241,7 @@
       "row_index": 7
     },
     "First!C7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "First!C7",
       "value": 1.1,
       "formula": null,
@@ -253,7 +253,7 @@
       "row_index": 7
     },
     "Second!A1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!A1",
       "value": "Header 1",
       "formula": null,
@@ -265,7 +265,7 @@
       "row_index": 1
     },
     "Second!B1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!B1",
       "value": "Header 4",
       "formula": null,
@@ -277,7 +277,7 @@
       "row_index": 1
     },
     "Second!C1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!C1",
       "value": "Header 5",
       "formula": null,
@@ -289,7 +289,7 @@
       "row_index": 1
     },
     "Second!A2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!A2",
       "value": 0.1,
       "formula": null,
@@ -301,7 +301,7 @@
       "row_index": 2
     },
     "Second!B2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!B2",
       "value": 0.1,
       "formula": null,
@@ -313,7 +313,7 @@
       "row_index": 2
     },
     "Second!C2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!C2",
       "value": 0.2,
       "formula": null,
@@ -325,7 +325,7 @@
       "row_index": 2
     },
     "Second!A3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!A3",
       "value": 0.3,
       "formula": null,
@@ -337,7 +337,7 @@
       "row_index": 3
     },
     "Second!B3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!B3",
       "value": 0.2,
       "formula": null,
@@ -349,7 +349,7 @@
       "row_index": 3
     },
     "Second!C3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!C3",
       "value": 0.4,
       "formula": null,
@@ -361,7 +361,7 @@
       "row_index": 3
     },
     "Second!A4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!A4",
       "value": 0.5,
       "formula": null,
@@ -373,7 +373,7 @@
       "row_index": 4
     },
     "Second!B4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!B4",
       "value": 0.3,
       "formula": null,
@@ -385,7 +385,7 @@
       "row_index": 4
     },
     "Second!C4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!C4",
       "value": 0.6,
       "formula": null,
@@ -397,7 +397,7 @@
       "row_index": 4
     },
     "Second!A5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!A5",
       "value": 0.7,
       "formula": null,
@@ -409,7 +409,7 @@
       "row_index": 5
     },
     "Second!B5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!B5",
       "value": 0.4,
       "formula": null,
@@ -421,7 +421,7 @@
       "row_index": 5
     },
     "Second!C5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!C5",
       "value": 0.8,
       "formula": null,
@@ -433,7 +433,7 @@
       "row_index": 5
     },
     "Second!A6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!A6",
       "value": 0.9,
       "formula": null,
@@ -445,7 +445,7 @@
       "row_index": 6
     },
     "Second!B6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!B6",
       "value": 0.5,
       "formula": null,
@@ -457,7 +457,7 @@
       "row_index": 6
     },
     "Second!C6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!C6",
       "value": 1,
       "formula": null,
@@ -469,7 +469,7 @@
       "row_index": 6
     },
     "Second!A7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!A7",
       "value": 1.1,
       "formula": null,
@@ -481,7 +481,7 @@
       "row_index": 7
     },
     "Second!B7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!B7",
       "value": 0.6,
       "formula": null,
@@ -493,7 +493,7 @@
       "row_index": 7
     },
     "Second!C7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Second!C7",
       "value": 1.2,
       "formula": null,
@@ -505,7 +505,7 @@
       "row_index": 7
     },
     "Third!A1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!A1",
       "value": "Head 1",
       "formula": null,
@@ -517,7 +517,7 @@
       "row_index": 1
     },
     "Third!B1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!B1",
       "value": "Head 2",
       "formula": null,
@@ -529,7 +529,7 @@
       "row_index": 1
     },
     "Third!C1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!C1",
       "value": "Head 3",
       "formula": null,
@@ -541,18 +541,18 @@
       "row_index": 1
     },
     "Third!A2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!A2",
       "value": 0.2,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!A2:C7+Second!A2:C7",
         "sheet_name": "Third",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!A2:C7",
             "ttype": "operand",
             "tsubtype": "range",
@@ -562,7 +562,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -572,7 +572,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "Second!A2:C7",
             "ttype": "operand",
             "tsubtype": "range",
@@ -635,7 +635,7 @@
       "row_index": 2
     },
     "Third!B2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!B2",
       "value": 0.30000000000000004,
       "formula": null,
@@ -647,7 +647,7 @@
       "row_index": 2
     },
     "Third!C2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!C2",
       "value": 0.30000000000000004,
       "formula": null,
@@ -659,7 +659,7 @@
       "row_index": 2
     },
     "Third!A3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!A3",
       "value": 0.5,
       "formula": null,
@@ -671,7 +671,7 @@
       "row_index": 3
     },
     "Third!B3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!B3",
       "value": 0.6000000000000001,
       "formula": null,
@@ -683,7 +683,7 @@
       "row_index": 3
     },
     "Third!C3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!C3",
       "value": 0.7,
       "formula": null,
@@ -695,7 +695,7 @@
       "row_index": 3
     },
     "Third!A4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!A4",
       "value": 0.8,
       "formula": null,
@@ -707,7 +707,7 @@
       "row_index": 4
     },
     "Third!B4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!B4",
       "value": 0.8999999999999999,
       "formula": null,
@@ -719,7 +719,7 @@
       "row_index": 4
     },
     "Third!C4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!C4",
       "value": 1.1,
       "formula": null,
@@ -731,7 +731,7 @@
       "row_index": 4
     },
     "Third!A5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!A5",
       "value": 1.1,
       "formula": null,
@@ -743,7 +743,7 @@
       "row_index": 5
     },
     "Third!B5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!B5",
       "value": 1.2000000000000002,
       "formula": null,
@@ -755,7 +755,7 @@
       "row_index": 5
     },
     "Third!C5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!C5",
       "value": 1.5,
       "formula": null,
@@ -767,7 +767,7 @@
       "row_index": 5
     },
     "Third!A6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!A6",
       "value": 1.4,
       "formula": null,
@@ -779,7 +779,7 @@
       "row_index": 6
     },
     "Third!B6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!B6",
       "value": 1.5,
       "formula": null,
@@ -791,7 +791,7 @@
       "row_index": 6
     },
     "Third!C6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!C6",
       "value": 1.9,
       "formula": null,
@@ -803,7 +803,7 @@
       "row_index": 6
     },
     "Third!A7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!A7",
       "value": 1.7000000000000002,
       "formula": null,
@@ -815,7 +815,7 @@
       "row_index": 7
     },
     "Third!B7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!B7",
       "value": 1.7999999999999998,
       "formula": null,
@@ -827,7 +827,7 @@
       "row_index": 7
     },
     "Third!C7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Third!C7",
       "value": 2.3,
       "formula": null,
@@ -839,18 +839,18 @@
       "row_index": 7
     },
     "Fourth!A2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!A2",
       "value": 1.1,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!A2+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -860,7 +860,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!A2",
             "ttype": "operand",
             "tsubtype": "range",
@@ -870,7 +870,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -880,7 +880,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -890,7 +890,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -917,18 +917,18 @@
       "row_index": 2
     },
     "Fourth!B2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!B2",
       "value": 1.2,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!B2+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -938,7 +938,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!B2",
             "ttype": "operand",
             "tsubtype": "range",
@@ -948,7 +948,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -958,7 +958,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -968,7 +968,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -995,18 +995,18 @@
       "row_index": 2
     },
     "Fourth!C2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!C2",
       "value": 1.1,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!C2+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -1016,7 +1016,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!C2",
             "ttype": "operand",
             "tsubtype": "range",
@@ -1026,7 +1026,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -1036,7 +1036,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -1046,7 +1046,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -1073,18 +1073,18 @@
       "row_index": 2
     },
     "Fourth!A3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!A3",
       "value": 1.2,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!A3+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -1094,7 +1094,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!A3",
             "ttype": "operand",
             "tsubtype": "range",
@@ -1104,7 +1104,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -1114,7 +1114,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -1124,7 +1124,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -1151,18 +1151,18 @@
       "row_index": 3
     },
     "Fourth!B3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!B3",
       "value": 1.4,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!B3+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -1172,7 +1172,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!B3",
             "ttype": "operand",
             "tsubtype": "range",
@@ -1182,7 +1182,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -1192,7 +1192,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -1202,7 +1202,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -1229,18 +1229,18 @@
       "row_index": 3
     },
     "Fourth!C3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!C3",
       "value": 1.3,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!C3+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -1250,7 +1250,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!C3",
             "ttype": "operand",
             "tsubtype": "range",
@@ -1260,7 +1260,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -1270,7 +1270,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -1280,7 +1280,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -1307,18 +1307,18 @@
       "row_index": 3
     },
     "Fourth!A4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!A4",
       "value": 1.3,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!A4+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -1328,7 +1328,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!A4",
             "ttype": "operand",
             "tsubtype": "range",
@@ -1338,7 +1338,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -1348,7 +1348,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -1358,7 +1358,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -1385,18 +1385,18 @@
       "row_index": 4
     },
     "Fourth!B4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!B4",
       "value": 1.6,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!B4+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -1406,7 +1406,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!B4",
             "ttype": "operand",
             "tsubtype": "range",
@@ -1416,7 +1416,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -1426,7 +1426,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -1436,7 +1436,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -1463,18 +1463,18 @@
       "row_index": 4
     },
     "Fourth!C4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!C4",
       "value": 1.5,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!C4+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -1484,7 +1484,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!C4",
             "ttype": "operand",
             "tsubtype": "range",
@@ -1494,7 +1494,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -1504,7 +1504,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -1514,7 +1514,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -1541,18 +1541,18 @@
       "row_index": 4
     },
     "Fourth!A5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!A5",
       "value": 1.4,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!A5+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -1562,7 +1562,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!A5",
             "ttype": "operand",
             "tsubtype": "range",
@@ -1572,7 +1572,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -1582,7 +1582,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -1592,7 +1592,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -1619,18 +1619,18 @@
       "row_index": 5
     },
     "Fourth!B5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!B5",
       "value": 1.8,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!B5+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -1640,7 +1640,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!B5",
             "ttype": "operand",
             "tsubtype": "range",
@@ -1650,7 +1650,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -1660,7 +1660,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -1670,7 +1670,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -1697,18 +1697,18 @@
       "row_index": 5
     },
     "Fourth!C5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!C5",
       "value": 1.7,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!C5+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -1718,7 +1718,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!C5",
             "ttype": "operand",
             "tsubtype": "range",
@@ -1728,7 +1728,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -1738,7 +1738,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -1748,7 +1748,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -1775,18 +1775,18 @@
       "row_index": 5
     },
     "Fourth!A6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!A6",
       "value": 1.5,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!A6+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -1796,7 +1796,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!A6",
             "ttype": "operand",
             "tsubtype": "range",
@@ -1806,7 +1806,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -1816,7 +1816,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -1826,7 +1826,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -1853,18 +1853,18 @@
       "row_index": 6
     },
     "Fourth!B6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!B6",
       "value": 2,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!B6+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -1874,7 +1874,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!B6",
             "ttype": "operand",
             "tsubtype": "range",
@@ -1884,7 +1884,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -1894,7 +1894,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -1904,7 +1904,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -1931,18 +1931,18 @@
       "row_index": 6
     },
     "Fourth!C6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!C6",
       "value": 1.9,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!C6+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -1952,7 +1952,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!C6",
             "ttype": "operand",
             "tsubtype": "range",
@@ -1962,7 +1962,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -1972,7 +1972,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -1982,7 +1982,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -2009,18 +2009,18 @@
       "row_index": 6
     },
     "Fourth!A7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!A7",
       "value": 1.6,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!A7+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -2030,7 +2030,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!A7",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2040,7 +2040,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2050,7 +2050,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2060,7 +2060,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -2087,18 +2087,18 @@
       "row_index": 7
     },
     "Fourth!B7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!B7",
       "value": 2.2,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!B7+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -2108,7 +2108,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!B7",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2118,7 +2118,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2128,7 +2128,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2138,7 +2138,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -2165,18 +2165,18 @@
       "row_index": 7
     },
     "Fourth!C7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fourth!C7",
       "value": 2.1,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(First!C7+1)",
         "sheet_name": "Fourth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -2186,7 +2186,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!C7",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2196,7 +2196,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2206,7 +2206,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "1",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2216,7 +2216,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -2243,18 +2243,18 @@
       "row_index": 7
     },
     "Fifth!A2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!A2",
       "value": 2.1,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!A2+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!A2",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2264,7 +2264,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2274,7 +2274,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2301,18 +2301,18 @@
       "row_index": 2
     },
     "Fifth!B2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!B2",
       "value": 2.2,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!B2+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!B2",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2322,7 +2322,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2332,7 +2332,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2359,18 +2359,18 @@
       "row_index": 2
     },
     "Fifth!C2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!C2",
       "value": 2.1,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!C2+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!C2",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2380,7 +2380,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2390,7 +2390,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2417,18 +2417,18 @@
       "row_index": 2
     },
     "Fifth!A3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!A3",
       "value": 2.2,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!A3+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!A3",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2438,7 +2438,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2448,7 +2448,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2475,18 +2475,18 @@
       "row_index": 3
     },
     "Fifth!B3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!B3",
       "value": 2.4,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!B3+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!B3",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2496,7 +2496,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2506,7 +2506,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2533,18 +2533,18 @@
       "row_index": 3
     },
     "Fifth!C3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!C3",
       "value": 2.3,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!C3+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!C3",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2554,7 +2554,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2564,7 +2564,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2591,18 +2591,18 @@
       "row_index": 3
     },
     "Fifth!A4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!A4",
       "value": 2.3,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!A4+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!A4",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2612,7 +2612,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2622,7 +2622,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2649,18 +2649,18 @@
       "row_index": 4
     },
     "Fifth!B4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!B4",
       "value": 2.6,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!B4+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!B4",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2670,7 +2670,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2680,7 +2680,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2707,18 +2707,18 @@
       "row_index": 4
     },
     "Fifth!C4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!C4",
       "value": 2.5,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!C4+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!C4",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2728,7 +2728,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2738,7 +2738,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2765,18 +2765,18 @@
       "row_index": 4
     },
     "Fifth!A5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!A5",
       "value": 2.4,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!A5+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!A5",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2786,7 +2786,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2796,7 +2796,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2823,18 +2823,18 @@
       "row_index": 5
     },
     "Fifth!B5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!B5",
       "value": 2.8,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!B5+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!B5",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2844,7 +2844,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2854,7 +2854,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2881,18 +2881,18 @@
       "row_index": 5
     },
     "Fifth!C5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!C5",
       "value": 2.7,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!C5+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!C5",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2902,7 +2902,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2912,7 +2912,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2939,18 +2939,18 @@
       "row_index": 5
     },
     "Fifth!A6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!A6",
       "value": 2.5,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!A6+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!A6",
             "ttype": "operand",
             "tsubtype": "range",
@@ -2960,7 +2960,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -2970,7 +2970,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -2997,18 +2997,18 @@
       "row_index": 6
     },
     "Fifth!B6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!B6",
       "value": 3,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!B6+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!B6",
             "ttype": "operand",
             "tsubtype": "range",
@@ -3018,7 +3018,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -3028,7 +3028,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -3055,18 +3055,18 @@
       "row_index": 6
     },
     "Fifth!C6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!C6",
       "value": 2.9,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!C6+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!C6",
             "ttype": "operand",
             "tsubtype": "range",
@@ -3076,7 +3076,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -3086,7 +3086,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -3113,18 +3113,18 @@
       "row_index": 6
     },
     "Fifth!A7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!A7",
       "value": 2.6,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!A7+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!A7",
             "ttype": "operand",
             "tsubtype": "range",
@@ -3134,7 +3134,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -3144,7 +3144,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -3171,18 +3171,18 @@
       "row_index": 7
     },
     "Fifth!B7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!B7",
       "value": 3.2,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!B7+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!B7",
             "ttype": "operand",
             "tsubtype": "range",
@@ -3192,7 +3192,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -3202,7 +3202,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -3229,18 +3229,18 @@
       "row_index": 7
     },
     "Fifth!C7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Fifth!C7",
       "value": 3.1,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!C7+2",
         "sheet_name": "Fifth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!C7",
             "ttype": "operand",
             "tsubtype": "range",
@@ -3250,7 +3250,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -3260,7 +3260,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "2",
             "ttype": "operand",
             "tsubtype": "number",
@@ -3287,18 +3287,18 @@
       "row_index": 7
     },
     "Sixth!A1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!A1",
       "value": "Header 1",
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=First!A1:C7",
         "sheet_name": "Sixth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "First!A1:C7",
             "ttype": "operand",
             "tsubtype": "range",
@@ -3345,7 +3345,7 @@
       "row_index": 1
     },
     "Sixth!B1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!B1",
       "value": "Header 2",
       "formula": null,
@@ -3357,7 +3357,7 @@
       "row_index": 1
     },
     "Sixth!C1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!C1",
       "value": "Header 3",
       "formula": null,
@@ -3369,7 +3369,7 @@
       "row_index": 1
     },
     "Sixth!A2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!A2",
       "value": 0.1,
       "formula": null,
@@ -3381,7 +3381,7 @@
       "row_index": 2
     },
     "Sixth!B2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!B2",
       "value": 0.2,
       "formula": null,
@@ -3393,7 +3393,7 @@
       "row_index": 2
     },
     "Sixth!C2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!C2",
       "value": 0.1,
       "formula": null,
@@ -3405,7 +3405,7 @@
       "row_index": 2
     },
     "Sixth!A3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!A3",
       "value": 0.2,
       "formula": null,
@@ -3417,7 +3417,7 @@
       "row_index": 3
     },
     "Sixth!B3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!B3",
       "value": 0.4,
       "formula": null,
@@ -3429,7 +3429,7 @@
       "row_index": 3
     },
     "Sixth!C3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!C3",
       "value": 0.3,
       "formula": null,
@@ -3441,7 +3441,7 @@
       "row_index": 3
     },
     "Sixth!A4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!A4",
       "value": 0.3,
       "formula": null,
@@ -3453,7 +3453,7 @@
       "row_index": 4
     },
     "Sixth!B4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!B4",
       "value": 0.6,
       "formula": null,
@@ -3465,7 +3465,7 @@
       "row_index": 4
     },
     "Sixth!C4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!C4",
       "value": 0.5,
       "formula": null,
@@ -3477,7 +3477,7 @@
       "row_index": 4
     },
     "Sixth!A5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!A5",
       "value": 0.4,
       "formula": null,
@@ -3489,7 +3489,7 @@
       "row_index": 5
     },
     "Sixth!B5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!B5",
       "value": 0.8,
       "formula": null,
@@ -3501,7 +3501,7 @@
       "row_index": 5
     },
     "Sixth!C5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!C5",
       "value": 0.7,
       "formula": null,
@@ -3513,7 +3513,7 @@
       "row_index": 5
     },
     "Sixth!A6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!A6",
       "value": 0.5,
       "formula": null,
@@ -3525,7 +3525,7 @@
       "row_index": 6
     },
     "Sixth!B6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!B6",
       "value": 1,
       "formula": null,
@@ -3537,7 +3537,7 @@
       "row_index": 6
     },
     "Sixth!C6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!C6",
       "value": 0.9,
       "formula": null,
@@ -3549,7 +3549,7 @@
       "row_index": 6
     },
     "Sixth!A7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!A7",
       "value": 0.6,
       "formula": null,
@@ -3561,7 +3561,7 @@
       "row_index": 7
     },
     "Sixth!B7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!B7",
       "value": 1.2,
       "formula": null,
@@ -3573,7 +3573,7 @@
       "row_index": 7
     },
     "Sixth!C7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Sixth!C7",
       "value": 1.1,
       "formula": null,
@@ -3585,7 +3585,7 @@
       "row_index": 7
     },
     "Seventh!A1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Seventh!A1",
       "value": 1,
       "formula": null,
@@ -3597,7 +3597,7 @@
       "row_index": 1
     },
     "Seventh!B1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Seventh!B1",
       "value": 2,
       "formula": null,
@@ -3609,18 +3609,18 @@
       "row_index": 1
     },
     "Seventh!C1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Seventh!C1",
       "value": 3,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=A1+B1",
         "sheet_name": "Seventh",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "A1",
             "ttype": "operand",
             "tsubtype": "range",
@@ -3630,7 +3630,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -3640,7 +3640,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "B1",
             "ttype": "operand",
             "tsubtype": "range",
@@ -3669,7 +3669,7 @@
       "row_index": 1
     },
     "Eighth!A1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!A1",
       "value": 1,
       "formula": null,
@@ -3684,7 +3684,7 @@
       "row_index": 1
     },
     "Eighth!B1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!B1",
       "value": 100,
       "formula": null,
@@ -3698,7 +3698,7 @@
       "row_index": 1
     },
     "Eighth!C1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!C1",
       "value": 10,
       "formula": null,
@@ -3712,7 +3712,7 @@
       "row_index": 1
     },
     "Eighth!A2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!A2",
       "value": 2,
       "formula": null,
@@ -3727,7 +3727,7 @@
       "row_index": 2
     },
     "Eighth!C2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!C2",
       "value": 9,
       "formula": null,
@@ -3741,7 +3741,7 @@
       "row_index": 2
     },
     "Eighth!A3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!A3",
       "value": 3,
       "formula": null,
@@ -3756,7 +3756,7 @@
       "row_index": 3
     },
     "Eighth!C3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!C3",
       "value": 8,
       "formula": null,
@@ -3770,7 +3770,7 @@
       "row_index": 3
     },
     "Eighth!A4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!A4",
       "value": 4,
       "formula": null,
@@ -3785,7 +3785,7 @@
       "row_index": 4
     },
     "Eighth!C4": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!C4",
       "value": 7,
       "formula": null,
@@ -3799,7 +3799,7 @@
       "row_index": 4
     },
     "Eighth!A5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!A5",
       "value": 5,
       "formula": null,
@@ -3814,7 +3814,7 @@
       "row_index": 5
     },
     "Eighth!C5": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!C5",
       "value": 6,
       "formula": null,
@@ -3828,7 +3828,7 @@
       "row_index": 5
     },
     "Eighth!A6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!A6",
       "value": 6,
       "formula": null,
@@ -3843,7 +3843,7 @@
       "row_index": 6
     },
     "Eighth!C6": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!C6",
       "value": 5,
       "formula": null,
@@ -3857,7 +3857,7 @@
       "row_index": 6
     },
     "Eighth!A7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!A7",
       "value": 7,
       "formula": null,
@@ -3872,7 +3872,7 @@
       "row_index": 7
     },
     "Eighth!C7": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!C7",
       "value": 4,
       "formula": null,
@@ -3886,7 +3886,7 @@
       "row_index": 7
     },
     "Eighth!A8": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!A8",
       "value": 8,
       "formula": null,
@@ -3901,7 +3901,7 @@
       "row_index": 8
     },
     "Eighth!C8": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!C8",
       "value": 3,
       "formula": null,
@@ -3915,7 +3915,7 @@
       "row_index": 8
     },
     "Eighth!A9": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!A9",
       "value": 9,
       "formula": null,
@@ -3930,7 +3930,7 @@
       "row_index": 9
     },
     "Eighth!C9": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!C9",
       "value": 2,
       "formula": null,
@@ -3944,7 +3944,7 @@
       "row_index": 9
     },
     "Eighth!A10": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!A10",
       "value": 10,
       "formula": null,
@@ -3959,7 +3959,7 @@
       "row_index": 10
     },
     "Eighth!C10": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Eighth!C10",
       "value": 1,
       "formula": null,
@@ -3973,7 +3973,7 @@
       "row_index": 10
     },
     "Ninth!A1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Ninth!A1",
       "value": 1,
       "formula": null,
@@ -3985,18 +3985,18 @@
       "row_index": 1
     },
     "Ninth!B1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Ninth!B1",
       "value": 101,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=A1+Hundred",
         "sheet_name": "Ninth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "A1",
             "ttype": "operand",
             "tsubtype": "range",
@@ -4006,7 +4006,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "+",
             "ttype": "operator-infix",
             "tsubtype": "math",
@@ -4016,7 +4016,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "Hundred",
             "ttype": "operand",
             "tsubtype": "range",
@@ -4045,7 +4045,7 @@
       "row_index": 1
     },
     "Tenth!A1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Tenth!A1",
       "value": 2,
       "formula": null,
@@ -4057,7 +4057,7 @@
       "row_index": 1
     },
     "Tenth!B1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Tenth!B1",
       "value": 100,
       "formula": null,
@@ -4069,18 +4069,18 @@
       "row_index": 1
     },
     "Tenth!C1": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Tenth!C1",
       "value": 102,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(A1:B1)",
         "sheet_name": "Tenth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -4090,7 +4090,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "A1:B1",
             "ttype": "operand",
             "tsubtype": "range",
@@ -4100,7 +4100,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -4128,7 +4128,7 @@
       "row_index": 1
     },
     "Tenth!A2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Tenth!A2",
       "value": 2,
       "formula": null,
@@ -4140,18 +4140,18 @@
       "row_index": 2
     },
     "Tenth!B2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Tenth!B2",
       "value": 100,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=Hundred",
         "sheet_name": "Tenth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "Hundred",
             "ttype": "operand",
             "tsubtype": "range",
@@ -4178,18 +4178,18 @@
       "row_index": 2
     },
     "Tenth!C2": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Tenth!C2",
       "value": 102,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(A2:B2)",
         "sheet_name": "Tenth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -4199,7 +4199,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "A2:B2",
             "ttype": "operand",
             "tsubtype": "range",
@@ -4209,7 +4209,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -4237,7 +4237,7 @@
       "row_index": 2
     },
     "Tenth!A3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Tenth!A3",
       "value": 2,
       "formula": null,
@@ -4249,7 +4249,7 @@
       "row_index": 3
     },
     "Tenth!B3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Tenth!B3",
       "value": 6,
       "formula": null,
@@ -4261,18 +4261,18 @@
       "row_index": 3
     },
     "Tenth!C3": {
-      "py/object": "xlcalculator.xltypes.XLCell",
+      "py/object": "xlsx_evaluate.xltypes.XLCell",
       "address": "Tenth!C3",
       "value": 102,
       "formula": {
-        "py/object": "xlcalculator.xltypes.XLFormula",
+        "py/object": "xlsx_evaluate.xltypes.XLFormula",
         "formula": "=SUM(A3,Hundred)",
         "sheet_name": "Tenth",
         "reference": null,
         "evaluate": true,
         "tokens": [
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "SUM",
             "ttype": "function",
             "tsubtype": "start",
@@ -4282,7 +4282,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "A3",
             "ttype": "operand",
             "tsubtype": "range",
@@ -4292,7 +4292,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": ",",
             "ttype": "argument",
             "tsubtype": "",
@@ -4302,7 +4302,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "Hundred",
             "ttype": "operand",
             "tsubtype": "range",
@@ -4312,7 +4312,7 @@
             }
           },
           {
-            "py/object": "xlcalculator.tokenizer.f_token",
+            "py/object": "xlsx_evaluate.tokenizer.f_token",
             "tvalue": "",
             "ttype": "function",
             "tsubtype": "stop",
@@ -4346,7 +4346,7 @@
       "py/id": 667
     },
     "My_Range": {
-      "py/object": "xlcalculator.xltypes.XLRange",
+      "py/object": "xlsx_evaluate.xltypes.XLRange",
       "address_str": "Eighth!A1:A10",
       "name": "My_Range",
       "value": null,
@@ -4385,7 +4385,7 @@
       ]
     },
     "Split_range": {
-      "py/object": "xlcalculator.xltypes.XLRange",
+      "py/object": "xlsx_evaluate.xltypes.XLRange",
       "address_str": "Eighth!A1:A10,Eighth!C1:C10",
       "name": "Split_range",
       "value": null,
@@ -4576,7 +4576,7 @@
       "py/id": 786
     },
     "First!A2:C7": {
-      "py/object": "xlcalculator.xltypes.XLRange",
+      "py/object": "xlsx_evaluate.xltypes.XLRange",
       "address_str": "First!A2:C7",
       "name": "First!A2:C7",
       "value": null,
@@ -4615,7 +4615,7 @@
       ]
     },
     "Second!A2:C7": {
-      "py/object": "xlcalculator.xltypes.XLRange",
+      "py/object": "xlsx_evaluate.xltypes.XLRange",
       "address_str": "Second!A2:C7",
       "name": "Second!A2:C7",
       "value": null,
@@ -4654,7 +4654,7 @@
       ]
     },
     "First!A1:C7": {
-      "py/object": "xlcalculator.xltypes.XLRange",
+      "py/object": "xlsx_evaluate.xltypes.XLRange",
       "address_str": "First!A1:C7",
       "name": "First!A1:C7",
       "value": null,
@@ -4698,7 +4698,7 @@
       ]
     },
     "Tenth!A1:B1": {
-      "py/object": "xlcalculator.xltypes.XLRange",
+      "py/object": "xlsx_evaluate.xltypes.XLRange",
       "address_str": "Tenth!A1:B1",
       "name": "Tenth!A1:B1",
       "value": null,
@@ -4711,7 +4711,7 @@
       ]
     },
     "Tenth!A2:B2": {
-      "py/object": "xlcalculator.xltypes.XLRange",
+      "py/object": "xlsx_evaluate.xltypes.XLRange",
       "address_str": "Tenth!A2:B2",
       "name": "Tenth!A2:B2",
       "value": null,

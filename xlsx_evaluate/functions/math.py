@@ -1,6 +1,4 @@
 """Define math functions in Excel."""
-
-
 import decimal
 import math
 from typing import Tuple, Union

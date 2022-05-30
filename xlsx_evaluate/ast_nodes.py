@@ -87,10 +87,10 @@ class ASTNode:
 
     def __repr__(self):
         return (
-            f'<{self.__class__.__name__}'
-            f'tvalue: {repr(self.tvalue)}'
-            f'ttype: {repr(self.ttype)}'
-            f'tsubtype: {repr(self.tsubtype)}'
+            f'<{self.__class__.__name__} '
+            f'tvalue: {repr(self.tvalue)}, '
+            f'ttype: {self.ttype}, '
+            f'tsubtype: {self.tsubtype}'
             f'>'
         )
 
@@ -228,13 +228,13 @@ class FunctionNode(ASTNode):
         func = context.namespace[func_name]
         # 3. Prepare arguments
         sig = inspect.signature(func)
-        bound = sig.bind(**self.args)
+        bound = sig.bind(*self.args)
         args = []
-        for pname, pvalue in bound.arguments.items():
+        for pname, pvalue in list(bound.arguments.items()):
             param = sig.parameters[pname]
             ptype = param.annotation
             if ptype == func_xltypes.XlExpr:
-                args.append(func_xltypes.XlExpr(
+                args.append(func_xltypes.Expr(
                     pvalue.eval, (context,), ref=context.ref, ast=pvalue
                 ))
             elif param.kind == param.VAR_POSITIONAL and func_xltypes.XlExpr in getattr(ptype, '__args__', []):

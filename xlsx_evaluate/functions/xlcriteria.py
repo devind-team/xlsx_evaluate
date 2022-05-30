@@ -25,7 +25,7 @@ def parse_criteria(criteria: Union[str, func_xltypes.Text, func_xltypes.Array]):
         str_operator, str_value = search(1), search(2)
         operator = CRITERIA_OPERATORS.get(str_operator)
         if operator is None:
-            str_operator = CRITERIA_OPERATORS['=']
+            operator = CRITERIA_OPERATORS['=']
             str_value = criteria
         value = str_value
         for xl_type in (

@@ -310,4 +310,4 @@ class FormulaParser:
                 # Stack has arguments in reverse order
                 node.args = list(reversed(args))
             stack.append(node)
-        return stack
+        return stack.pop()
