@@ -89,7 +89,7 @@ class FormulaParser:
                 token.tvalue = ')'
                 tokens.append(token)
             elif (token.ttype == 'operand' and token.tsubtype == 'range'
-                  and token.tvalue in named_ranges):
+                  and named_ranges and token.tvalue in named_ranges):
                 # Resolve the named range once and for all.
                 token.tvalue = named_ranges[token.tvalue]
                 tokens.append(token)
