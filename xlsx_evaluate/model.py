@@ -5,7 +5,7 @@ import logging
 import os
 from dataclasses import dataclass, field
 
-from . import xltypes, reader, parser, tokenizer
+from . import parser, reader, tokenizer, xltypes
 
 
 @dataclass
@@ -18,9 +18,8 @@ class Model:
 
     def set_cell_value(self, address, value):
         """Sets a new value for a specified cell."""
-        if address in self.defined_names:
-            if isinstance(self.defined_names[address], xltypes.XLCell):
-                address = self.defined_names[address].address
+        if address in self.defined_names and isinstance(self.defined_names[address], xltypes.XLCell):
+            address = self.defined_names[address].address
 
         if isinstance(address, str):
             if address in self.cells:
@@ -35,22 +34,19 @@ class Model:
                 self.cells[address.address] = xltypes.XLCell
         else:
             raise TypeError(
-                f"Cannot set the cell value for an address of type "
-                f"{address}. XLCell or a string is needed."
+                f'Cannot set the cell value for an address of type '
+                f'{address}. XLCell or a string is needed.'
             )
 
     def get_cell_value(self, address):
-        if address in self.defined_names:
-            if isinstance(self.defined_names[address], xltypes.XLCell):
-                address = self.defined_names[address].address
+        if address in self.defined_names and isinstance(self.defined_names[address], xltypes.XLCell):
+            address = self.defined_names[address].address
 
         if isinstance(address, str):
             if address in self.cells:
                 return self.cells[address].value
             else:
-                logging.debug(
-                    "Trying to get value for cell {address} but that cell "
-                    "doesn't exist.")
+                logging.debug(f'Trying to get value for cell {address} but that cell doesn`t exist.')
                 return 0
 
         elif isinstance(address, xltypes.XLCell):
@@ -58,7 +54,7 @@ class Model:
                 return self.cells[address.address].value
             else:
                 logging.debug(
-                    f"Trying to get value for cell {address.address} but that cell doesn't exist")
+                    f'Trying to get value for cell {address.address} but that cell doesn`t exist')
                 return 0
 
         else:
