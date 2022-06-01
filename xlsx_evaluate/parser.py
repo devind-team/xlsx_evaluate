@@ -179,8 +179,7 @@ class FormulaParser:
                                 new_tokens.pop()
                                 break
 
-                        new_tokens.append(
-                            tokenizer.f_token(expr, 'operand', 'pointer'))
+                        new_tokens.append(tokenizer.f_token(expr, 'operand', 'pointer'))
 
         tokens = new_tokens if new_tokens else tokens
         for token in tokens:
@@ -232,14 +231,11 @@ class FormulaParser:
                         o2 = OPERATORS[stack[-1].tvalue]
 
                     if (
-                            (o1.associativity == 'left'
-                             and o1.precedence <= o2.precedence)
-                            or (o1.associativity == 'right'
-                                and o1.precedence < o2.precedence)
+                            (o1.associativity == 'left' and o1.precedence <= o2.precedence)
+                            or (o1.associativity == 'right' and o1.precedence < o2.precedence)
                     ):
                         output.append(
                             self.create_node(stack.pop()))
-
                     else:
                         break
 

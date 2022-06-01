@@ -65,6 +65,11 @@ def resolve_ranges(ranges: str, default_sheet: str = 'Sheet1') -> tuple[str, lis
     ]
 
 
+def resole_formula_dependencies(formulae: dict, ) -> dict:
+
+    return dict()
+
+
 def col2num(col: Optional[str]) -> int:
     if not col:
         raise Exception('Column may not be empty')

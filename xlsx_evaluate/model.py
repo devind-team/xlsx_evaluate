@@ -1,5 +1,7 @@
 import copy
 import gzip
+from collections import defaultdict
+
 import jsonpickle
 import logging
 import os
@@ -117,6 +119,29 @@ class Model:
                 self.cells[cell].formula.ast = parser.FormulaParser().parse(
                     self.cells[cell].formula.formula, defined_names)
 
+    @property
+    def associated_cells(self) -> dict[str, set[str]]:
+        """Associated cells.
+
+        Get associated cells for all model.
+        """
+        return {cell: formula.associated_cells for cell, formula in self.formulae.items()}
+
+    @property
+    def inverse_dependency_cell(self) -> dict[str, set[str]]:
+        """Inverse dependency cell.
+
+        When we have formula A1 = A2 + A3, need to know when change A1 cell.
+        Build dict:
+          { 'A2': 'A1', 'A3': 'A1'}
+        :return:
+        """
+        dependency_cell: dict[str, set[str]] = defaultdict(set)
+        for depend_cell, formula in self.formulae.items():
+            for cell in formula.associated_cells:
+                dependency_cell[cell].add(depend_cell)
+        return dependency_cell
+
     def __eq__(self, other):
 
         cells_comparison = []
@@ -145,6 +170,7 @@ class ModelCompiler:
     """
 
     def __init__(self):
+        """Model as aggregation."""
         self.model = Model()
 
     def read_excel_file(self, file_name):
@@ -261,16 +287,13 @@ class ModelCompiler:
                     for row in self.model.ranges[rng].cells:
                         for cell_address in row:
                             if cell_address not in self.model.cells.keys():
-                                self.model.cells[cell_address] = \
-                                    xltypes.XLCell(cell_address, '')
+                                self.model.cells[cell_address] = xltypes.XLCell(cell_address, '')
 
             if formula in self.model.cells:
-                self.model.cells[formula].formula.associated_cells = \
-                    associated_cells
+                self.model.cells[formula].formula.associated_cells = associated_cells
 
             if formula in self.model.defined_names:
-                self.model.defined_names[formula].formula.associated_cells = \
-                    associated_cells
+                self.model.defined_names[formula].formula.associated_cells = associated_cells
 
             self.model.formulae[formula].associated_cells = associated_cells
 
