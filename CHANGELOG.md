@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2022-06-01)
+### Feature
+* Add aggregation for compiler model ([`9a14f9b`](https://github.com/devind-team/xlsx_evaluate/commit/9a14f9bdd20bcebc1c2cd5c55be649fd35454042))
+
 ## v0.2.0 (2022-05-30)
 ### Feature
 * Add examples ([`ff9b2d1`](https://github.com/devind-team/xlsx_evaluate/commit/ff9b2d14b02cb6d08f14b744c110aba6f79b79bb))
