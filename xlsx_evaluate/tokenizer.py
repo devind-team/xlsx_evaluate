@@ -214,13 +214,13 @@ class f_tokenStack(ExcelParserTokens):  # noqa
         )
 
     def value(self):
-        return ((self.token()) and [(self.token()).tvalue] or [''])[0]
+        return (self.token() and [self.token().tvalue] or [''])[0]
 
     def type(self):
-        return ((self.token()) and [(self.token()).ttype] or [''])[0]
+        return (self.token() and [self.token().ttype] or [''])[0]
 
     def subtype(self):
-        return ((self.token()) and [(self.token()).tsubtype] or [''])[0]
+        return (self.token() and [self.token().tsubtype] or [''])[0]
 
 
 class ExcelParser(ExcelParserTokens):
