@@ -128,18 +128,18 @@ class Model:
         return {cell: formula.associated_cells for cell, formula in self.formulae.items()}
 
     @property
-    def inverse_dependency_cell(self) -> dict[str, set[str]]:
+    def inverse_dependency_cell(self) -> dict[str, dict[str, int]]:
         """Inverse dependency cell.
 
         When we have formula A1 = A2 + A3, need to know when change A1 cell.
         Build dict:
-          { 'A2': 'A1', 'A3': 'A1'}
+            {'A2': { 'A1': 1 }, 'A3': { 'A1': 1 }}
         :return:
         """
-        dependency_cell: dict[str, set[str]] = defaultdict(set)
+        dependency_cell: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
         for depend_cell, formula in self.formulae.items():
             for cell in formula.associated_cells:
-                dependency_cell[cell].add(depend_cell)
+                dependency_cell[cell][depend_cell] += 1
         return dependency_cell
 
     def __eq__(self, other):
