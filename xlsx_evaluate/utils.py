@@ -1,4 +1,4 @@
-"""Utils."""
+"""Module for utils."""
 
 import re
 import uuid
