@@ -133,7 +133,7 @@ class Model:
 
         When we have formula A1 = A2 + A3, need to know when change A1 cell.
         Build dict:
-          { 'A2': 'A1', 'A3': 'A1'}
+          { 'A2': ['A1'], 'A3': ['A1']}
         :return:
         """
         dependency_cell: dict[str, set[str]] = defaultdict(set)
