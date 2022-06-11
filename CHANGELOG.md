@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.1 (2022-06-10)
+### Fix
+* Downgrade semantic release version ([`d659c50`](https://github.com/devind-team/xlsx_evaluate/commit/d659c5091a3c09ac3b1427f0f3262cd52dbf4a2a))
+* Add poetry.lock ([`b85d151`](https://github.com/devind-team/xlsx_evaluate/commit/b85d15136e5ce6555f2caa33dcb04c46adb6ff81))
+* Change comment ([`0b9f45d`](https://github.com/devind-team/xlsx_evaluate/commit/0b9f45de0197287da0b7f21d0d02ea5149e1de1a))
+
 ## v0.3.0 (2022-06-01)
 ### Feature
 * Add aggregation for compiler model ([`9a14f9b`](https://github.com/devind-team/xlsx_evaluate/commit/9a14f9bdd20bcebc1c2cd5c55be649fd35454042))
