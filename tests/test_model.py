@@ -288,6 +288,12 @@ class ModelCompilerTest(unittest.TestCase):
             "B27": 6,
             "B28": "=B19*B20*B22",
             "C22": "=SUM(B22:B28)",
+            "D1": "abc",
+            "D2": "bca",
+            "D3": "=CONCATENATE(D1, D2)",
+            "E1": "abc",
+            "E2": "",
+            "E3": "=CONCATENATE(E1, E2)",
         }
 
         model_compiler = ModelCompiler()
@@ -298,3 +304,5 @@ class ModelCompilerTest(unittest.TestCase):
         evaluator.set_cell_value("Sheet1!B22", 100)
         self.assertEqual(0.4, evaluator.evaluate("Sheet1!B28"))
         self.assertEqual(1066.4, evaluator.evaluate("Sheet1!C22"))
+        self.assertEqual("abcbca", evaluator.evaluate("Sheet1!D3"))
+        self.assertEqual("abc", evaluator.evaluate("Sheet1!E3"))
