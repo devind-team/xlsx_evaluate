@@ -206,7 +206,7 @@ class ModelCompiler:
             else:
                 cell_address = f'{default_sheet}!{item}'
 
-            if not isinstance(input_dict[item], (float, int)) and input_dict[item] == f'={input_dict[item][1:]}':
+            if not isinstance(input_dict[item], (float, int)) and input_dict[item][0] == '=':
                 formula = xltypes.XLFormula(input_dict[item], sheet_name=default_sheet)
                 cell = xltypes.XLCell(cell_address, None, formula=formula)
                 self.model.cells[cell_address] = cell
