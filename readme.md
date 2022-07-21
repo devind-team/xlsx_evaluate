@@ -43,6 +43,9 @@ input_dict = {
     'B27': 6,
     'B28': '=B19 * B20 * B22',
     'C22': '=SUM(B22:B28)',
+    "D1": "abc",
+    "D2": "bca",
+    "D3": "=CONCATENATE(D1, D2)",
   }
 
 from xlsx_evaluate import ModelCompiler
@@ -59,6 +62,7 @@ for formula in my_model.formulae:
 evaluator.set_cell_value('Sheet1!B22', 100)
 print('Formula B28 now evaluates to', evaluator.evaluate('Sheet1!B28'))
 print('Formula C22 now evaluates to', evaluator.evaluate('Sheet1!C22'))
+print('Formula D3 now evaluates to', evaluator.evaluate("Sheet1!D3"))
 ```
 
 # TODO
