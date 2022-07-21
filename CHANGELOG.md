@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.5 (2022-07-21)
+### Fix
+* Update readme.md ([`8787a7b`](https://github.com/devind-team/xlsx_evaluate/commit/8787a7b3f16e78a71c0957bf3b96e673461caa67))
+
 ## v0.4.4 (2022-07-21)
 ### Fix
 * Fix wrong formula check ([`8cf04c1`](https://github.com/devind-team/xlsx_evaluate/commit/8cf04c1bfca2af21c1857ebf26ab955e6a7e6e6c))
