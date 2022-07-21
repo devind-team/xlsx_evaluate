@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.3 (2022-07-21)
+### Fix
+* Fix wrong formula check ([`ad3245c`](https://github.com/devind-team/xlsx_evaluate/commit/ad3245c7f917ba0204fd8b58189641cf6d28e1a8))
+
 ## v0.4.2 (2022-06-11)
 ### Fix
 * Change comment `inverse_dependency_cell` methods ([`89ef44a`](https://github.com/devind-team/xlsx_evaluate/commit/89ef44ae1f8d064ccefe7dd417af2365a3022345))
