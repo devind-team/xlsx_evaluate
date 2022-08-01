@@ -279,7 +279,6 @@ class ModelCompilerTest(unittest.TestCase):
             "B2": 1000,
             "B19": 0.001,
             "B20": 4,
-            # B21
             "B22": 1,
             "B23": 2,
             "B24": 3,
@@ -294,6 +293,8 @@ class ModelCompilerTest(unittest.TestCase):
             "E1": "abc",
             "E2": "",
             "E3": "=CONCATENATE(E1, E2)",
+            "F1": "1",
+            "F2": "=F1+F2"
         }
 
         model_compiler = ModelCompiler()
@@ -306,3 +307,5 @@ class ModelCompilerTest(unittest.TestCase):
         self.assertEqual(1066.4, evaluator.evaluate("Sheet1!C22"))
         self.assertEqual("abcbca", evaluator.evaluate("Sheet1!D3"))
         self.assertEqual("abc", evaluator.evaluate("Sheet1!E3"))
+        with self.assertRaisesRegex(RuntimeError, "Cycle detected"):
+            evaluator.evaluate("Sheet1!F2")

@@ -48,3 +48,12 @@ class CrossSheetTest(testing.FunctionalTestCase):
             self.evaluator.evaluate('Sheet2!C1'),
             12
         )
+
+
+class CrossSheetCycleTest(testing.FunctionalTestCase):
+
+    filename = 'cross_sheet_cycle.xlsx'
+
+    def test_cycle_reference(self):
+        with self.assertRaisesRegex(RuntimeError, 'Cycle detected'):
+            self.evaluator.evaluate('Sheet1!A1')
