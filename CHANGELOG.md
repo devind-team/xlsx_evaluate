@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.6 (2022-08-01)
+### Fix
+* Fix wrong cycle detection ([`6575ce5`](https://github.com/devind-team/xlsx_evaluate/commit/6575ce5e62cc2c3a970d9a7f934400eb7f98388d))
+
 ## v0.4.5 (2022-07-21)
 ### Fix
 * Update readme.md ([`8787a7b`](https://github.com/devind-team/xlsx_evaluate/commit/8787a7b3f16e78a71c0957bf3b96e673461caa67))
