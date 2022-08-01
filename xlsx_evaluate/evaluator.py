@@ -2,7 +2,7 @@
 
 import sys
 from functools import lru_cache
-from typing import Optional
+from typing import Dict, Optional
 
 from .functions import func_xltypes, xl
 
@@ -33,7 +33,7 @@ class EvaluatorContext(ast_nodes.EvalContext):
             raise RuntimeError(f'Cycle detected for {addr}:\n- ' + '\n- '.join(self.seen))
         self.seen.append(addr)
 
-        return self.evaluator.evaluate(addr, None)
+        return self.evaluator.evaluate(addr)
 
 
 class Evaluator:
@@ -44,9 +44,13 @@ class Evaluator:
         self.namespace = namespace \
             if namespace is not None else xl.FUNCTIONS.copy()
         self.cache_count = 0
+        self.contexts: Dict[str, EvaluatorContext] = {}
 
-    def _get_context(self, ref):
-        return EvaluatorContext(self, ref)
+    def get_context(self, ref):
+        refsheet = ref.split('!')[0]
+        if refsheet not in self.contexts:
+            self.contexts[refsheet] = EvaluatorContext(self, ref)
+        return self.contexts[refsheet]
 
     def resolve_names(self, addr):
         # Although defined names have been resolved in Model.create_node()
@@ -67,7 +71,7 @@ class Evaluator:
             raise ValueError(
                 f'I can`t resolve {addr} to a cell. It`s a formula and they aren`t supported as a cell reference.')
 
-    def evaluate(self, addr, context=None):
+    def evaluate(self, addr):
         # 1. Resolve the address to a cell.
         addr = self.resolve_names(addr)
         if addr not in self.model.cells:
@@ -82,7 +86,7 @@ class Evaluator:
         # 3. Prepare the execution environment and evaluate the formula.
         #    (Note: Range nodes will automatically evaluate all their
         #           dependencies.)
-        context = context if context is not None else self._get_context(addr)
+        context = self.get_context(addr)
         try:
             value = cell.formula.ast.eval(context)
         except Exception as err:
