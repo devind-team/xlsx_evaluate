@@ -83,7 +83,10 @@ def IF(
     """
     # Use delayed evaluation to only evaluate the true or false value but not
     # both.
-    return value_if_true() if logical_test() else value_if_false()
+    val = logical_test()
+    if isinstance(val, xlerrors.ExcelError):
+        return val
+    return value_if_true() if val else value_if_false()
 
 
 @xl.register()
