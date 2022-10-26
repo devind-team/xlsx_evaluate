@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.7 (2022-10-26)
+### Fix
+* Fix incorrect behavior of the IF function ([`318d7b7`](https://github.com/devind-team/xlsx_evaluate/commit/318d7b7549f586c2a9ab9806320b12a321a11832))
+
 ## v0.4.6 (2022-08-01)
 ### Fix
 * Fix wrong cycle detection ([`6575ce5`](https://github.com/devind-team/xlsx_evaluate/commit/6575ce5e62cc2c3a970d9a7f934400eb7f98388d))
