@@ -1,6 +1,6 @@
 import unittest
 from xlsx_evaluate.functions import logical, func_xltypes, xlerrors
-
+from xlsx_evaluate.functions.xlerrors import DivZeroExcelError
 
 VExpr = func_xltypes.ValueExpr
 
@@ -40,6 +40,9 @@ class LogicalModuleTest(unittest.TestCase):
         # Values get converted to expressions to not break the APIs.
         self.assertEqual(logical.IF(True, 1, 2), 1)
         self.assertEqual(logical.IF(False, 1, 2), 2)
+
+    def test_IF_with_error(self):
+        self.assertTrue(isinstance(logical.IF(VExpr(DivZeroExcelError()), VExpr(1), VExpr(2)), DivZeroExcelError))
 
     def test_NOT(self):
         self.assertEqual(logical.NOT(VExpr(True)), False)
