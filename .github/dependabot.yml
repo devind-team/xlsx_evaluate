@@ -5,6 +5,7 @@ updates:
     schedule:
       interval: daily
       time: "02:00"
+    target-branch: main
     open-pull-requests-limit: 10
 
   - package-ecosystem: github-actions
@@ -12,4 +13,5 @@ updates:
     schedule:
       interval: daily
       time: "02:00"
+    target-branch: main
     open-pull-requests-limit: 10

@@ -2,7 +2,7 @@
 
 import datetime
 
-import yearfrac
+import devind_yearfrac
 from dateutil import rrule
 from dateutil.relativedelta import relativedelta
 
@@ -342,14 +342,14 @@ def YEARFRAC(
     start_date, end_date = start_date.value, end_date.value
 
     if basis == 0:  # US 30/360
-        return yearfrac.yearfrac(start_date, end_date, '30e360_matu')
+        return devind_yearfrac.yearfrac(start_date, end_date, '30e360_matu')
     elif basis == 1:  # Actual/actual
-        return yearfrac.yearfrac(start_date, end_date, 'act_afb')
+        return devind_yearfrac.yearfrac(start_date, end_date, 'act_afb')
     elif basis == 2:  # Actual/360
         return (end_date - start_date).days / 360
     elif basis == 3:  # Actual/365
         return (end_date - start_date).days / 365
     elif basis == 4:  # Eurobond 30/360
-        return yearfrac.yearfrac(start_date, end_date, '30e360')
+        return devind_yearfrac.yearfrac(start_date, end_date, '30e360')
 
     raise xlerrors.ValueExcelError(f'basis must be 0, 1, 2, 3 or 4, got {basis}')
