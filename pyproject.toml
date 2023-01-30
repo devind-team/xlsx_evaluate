@@ -15,7 +15,7 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.11"
+python = ">=3.9"
 openpyxl = "^3.0.10"
 pandas = "^1.4.2"
 numpy = "^1.22.4"
