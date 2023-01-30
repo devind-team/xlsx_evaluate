@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.8 (2023-01-30)
+### Fix
+* Add `devind` word to whitelist ([`3f81611`](https://github.com/devind-team/xlsx_evaluate/commit/3f81611aea5b2520c44be02964608a5b9e70126c))
+* Replace `yearfrac` library with `devind_yearfrac` ([`c0c2c2b`](https://github.com/devind-team/xlsx_evaluate/commit/c0c2c2b14f4a049d0885b8ffd066a44504708c4a))
+
 ## v0.4.7 (2022-10-26)
 ### Fix
 * Fix incorrect behavior of the IF function ([`318d7b7`](https://github.com/devind-team/xlsx_evaluate/commit/318d7b7549f586c2a9ab9806320b12a321a11832))
