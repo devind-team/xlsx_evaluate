@@ -1,6 +1,6 @@
 import unittest
 from xlsx_evaluate.functions import logical, func_xltypes, xlerrors
-from xlsx_evaluate.functions.xlerrors import DivZeroExcelError
+from xlsx_evaluate.functions.xlerrors import DivZeroExcelError, ValueExcelError
 
 VExpr = func_xltypes.ValueExpr
 
@@ -55,3 +55,8 @@ class LogicalModuleTest(unittest.TestCase):
 
     def test_TRUE(self):
         self.assertTrue(logical.TRUE())
+
+    def test_IFERROR(self):
+        self.assertEqual(logical.IFERROR(VExpr(DivZeroExcelError()), 0), 0)
+        self.assertEqual(logical.IFERROR(VExpr(ValueExcelError()), 0), 0)
+        self.assertEqual(logical.IFERROR(VExpr(3), 0), 3)

@@ -97,3 +97,19 @@ def NOT(logical: func_xltypes.XlExpr) -> func_xltypes.XlBoolean:
     https://support.microsoft.com/en-us/office/not-function-9cfc6011-a054-40c7-a140-cd4ba2d87d77
     """
     return not bool(logical())
+
+
+@xl.register()
+@xl.validate_args
+def IFERROR(
+        logical_test: func_xltypes.XlExpr,
+        value_if_error: func_xltypes.XlExpr,
+):
+    """Return value if not error and another value if an error has occurred.
+
+    https://support.microsoft.com/en-us/office/iferror-function-c526fd07-caeb-47b8-8bb6-63f3e417f611
+    """
+    val = logical_test()
+    if isinstance(val, xlerrors.ExcelError):
+        return value_if_error()
+    return val
