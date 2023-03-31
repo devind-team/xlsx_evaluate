@@ -55,3 +55,8 @@ class LogicalModuleTest(unittest.TestCase):
 
     def test_TRUE(self):
         self.assertTrue(logical.TRUE())
+
+    def test_IFERROR(self):
+        self.assertEqual(logical.IFERROR(VExpr(DivZeroExcelError()), 0), 0)
+        self.assertEqual(logical.IFERROR(VExpr(ValueExcelError()), 0), 0)
+        self.assertEqual(logical.IFERROR(VExpr(3), 0), 3)
