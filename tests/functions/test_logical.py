@@ -1,6 +1,6 @@
 import unittest
 from xlsx_evaluate.functions import logical, func_xltypes, xlerrors
-from xlsx_evaluate.functions.xlerrors import DivZeroExcelError
+from xlsx_evaluate.functions.xlerrors import DivZeroExcelError, ValueExcelError
 
 VExpr = func_xltypes.ValueExpr
 
