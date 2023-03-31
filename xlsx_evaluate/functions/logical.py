@@ -109,7 +109,6 @@ def IFERROR(
 
     https://support.microsoft.com/en-us/office/iferror-function-c526fd07-caeb-47b8-8bb6-63f3e417f611
     """
-
     val = logical_test()
     if isinstance(val, xlerrors.ExcelError):
         return value_if_error()
