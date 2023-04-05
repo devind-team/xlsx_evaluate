@@ -60,3 +60,4 @@ class LogicalModuleTest(unittest.TestCase):
         self.assertEqual(logical.IFERROR(VExpr(DivZeroExcelError()), 0), 0)
         self.assertEqual(logical.IFERROR(VExpr(ValueExcelError()), 0), 0)
         self.assertEqual(logical.IFERROR(VExpr(3), 0), 3)
+        self.assertEqual(logical.IFERROR(VExpr(ValueExcelError()), '0'), '0')
