@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.0 (2023-04-12)
+### Feature
+* Add test ([`7a0ce47`](https://github.com/devind-team/xlsx_evaluate/commit/7a0ce4702da71836cf98a880af2f574da8f43f35))
+
+### Fix
+* Import error ([`ddfaed4`](https://github.com/devind-team/xlsx_evaluate/commit/ddfaed4fcd4a724794e1f9cd624b4f277da3df98))
+* Fix lint errors ([`12460c7`](https://github.com/devind-team/xlsx_evaluate/commit/12460c7f8321e90ddd50bbbac547ee3d8ad637ab))
+
 ## v0.4.8 (2023-01-30)
 ### Fix
 * Add `devind` word to whitelist ([`3f81611`](https://github.com/devind-team/xlsx_evaluate/commit/3f81611aea5b2520c44be02964608a5b9e70126c))
